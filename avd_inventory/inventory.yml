@@ -83,6 +83,52 @@ all:
                 L20:
                   ansible_host: 192.168.0.120
 
+        AVD_FABRIC_L2LEAFS:
+          vars:
+            type: l2leaf
+          children:
+            hosts:
+              L2L01:
+                ansible_host: 192.168.0.201
+              L2L02:
+                ansible_host: 192.168.0.202
+              L2L03:
+                ansible_host: 192.168.0.203
+              L2L04:
+                ansible_host: 192.168.0.204
+              L2L05:
+                ansible_host: 192.168.0.205
+              L2L06:
+                ansible_host: 192.168.0.206
+              L2L07:
+                ansible_host: 192.168.0.207
+              L2L08:
+                ansible_host: 192.168.0.208
+              L2L09:
+                ansible_host: 192.168.0.209
+              L2L10:
+                ansible_host: 192.168.0.210
+              L2L11:
+                ansible_host: 192.168.0.211
+              L2L12:
+                ansible_host: 192.168.0.212
+              L2L13:
+                ansible_host: 192.168.0.213
+              L2L14:
+                ansible_host: 192.168.0.214
+              L2L15:
+                ansible_host: 192.168.0.215
+              L2L16:
+                ansible_host: 192.168.0.216
+              L2L17:
+                ansible_host: 192.168.0.217
+              L2L18:
+                ansible_host: 192.168.0.218
+              L2L19:
+                ansible_host: 192.168.0.219
+              L2L20:
+                ansible_host: 192.168.0.220
+
     AVD_FABRIC_ENDPOINTS:
       children:
         AVD_FABRIC_LEAFS:

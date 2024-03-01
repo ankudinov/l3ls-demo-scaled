@@ -28,6 +28,16 @@ all:
                   ansible_host: {{ leaf.management_ip.split('/')[0] }}
 {%- endfor %}
 
+        {{ cookiecutter.in.avd.fabric_name }}_L2LEAFS:
+          vars:
+            type: l2leaf
+          children:
+            hosts:
+{%- for leaf in cookiecutter.in.fabric_l2leaf_inventory %}
+              {{ leaf.hostname }}:
+                ansible_host: {{ leaf.management_ip.split('/')[0] }}
+{%- endfor %}
+
     {{ cookiecutter.in.avd.fabric_name }}_ENDPOINTS:
       children:
         {{ cookiecutter.in.avd.fabric_name }}_LEAFS:

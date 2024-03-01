@@ -360,6 +360,128 @@
                 "mlag_interfaces": []
             }
         ],
+        "fabric_l2leaf_inventory": [
+            {
+                "id": "1",
+                "hostname": "L2L01",
+                "management_ip": "192.168.0.201/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "2",
+                "hostname": "L2L02",
+                "management_ip": "192.168.0.202/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "3",
+                "hostname": "L2L03",
+                "management_ip": "192.168.0.203/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "4",
+                "hostname": "L2L04",
+                "management_ip": "192.168.0.204/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "5",
+                "hostname": "L2L05",
+                "management_ip": "192.168.0.205/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "6",
+                "hostname": "L2L06",
+                "management_ip": "192.168.0.206/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "7",
+                "hostname": "L2L07",
+                "management_ip": "192.168.0.207/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "8",
+                "hostname": "L2L08",
+                "management_ip": "192.168.0.208/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "9",
+                "hostname": "L2L09",
+                "management_ip": "192.168.0.209/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "10",
+                "hostname": "L2L10",
+                "management_ip": "192.168.0.210/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "11",
+                "hostname": "L2L11",
+                "management_ip": "192.168.0.211/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "12",
+                "hostname": "L2L12",
+                "management_ip": "192.168.0.212/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "13",
+                "hostname": "L2L13",
+                "management_ip": "192.168.0.213/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "14",
+                "hostname": "L2L14",
+                "management_ip": "192.168.0.214/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "15",
+                "hostname": "L2L15",
+                "management_ip": "192.168.0.215/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "16",
+                "hostname": "L2L16",
+                "management_ip": "192.168.0.216/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "17",
+                "hostname": "L2L17",
+                "management_ip": "192.168.0.217/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "18",
+                "hostname": "L2L18",
+                "management_ip": "192.168.0.218/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "19",
+                "hostname": "L2L19",
+                "management_ip": "192.168.0.219/24",
+                "platform": "cEOS"
+            },
+            {
+                "id": "20",
+                "hostname": "L2L20",
+                "management_ip": "192.168.0.220/24",
+                "platform": "cEOS"
+            }
+        ],
         "avd": {
             "repo_name": "avd_inventory",
             "mgmt_interface": "Management0",

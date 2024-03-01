@@ -1,6 +1,21 @@
 ---
 fabric_name: {{ cookiecutter.in.avd.fabric_name }}
 
+# Set default uplink, downlink, and MLAG interfaces based on node type
+default_interfaces:
+  # - types: [ spine ]
+  #   platforms: [ default ]
+  #   uplink_interfaces: [ Ethernet1-2 ]
+  #   downlink_interfaces: [ Ethernet1-8 ]
+  - types: [ l3leaf ]
+    # platforms: [ default ]
+    # uplink_interfaces: [ Ethernet1-2 ]
+    # mlag_interfaces: [ Ethernet3-4 ]
+    downlink_interfaces: [ Ethernet11-12 ]
+  - types: [ l2leaf ]
+    # platforms: [ default ]
+    uplink_interfaces: [ Ethernet11-12 ]
+
 # Spine Switches
 spine:
   defaults:
@@ -44,3 +59,24 @@ l3leaf:
 {%- endfor %}
 
 p2p_uplinks_mtu: 9214
+
+l2leaf:
+  defaults:
+    platform: cEOS
+    spanning_tree_mode: mstp
+
+  node_groups:
+{%- for leaf in cookiecutter.in.fabric_leaf_inventory %}
+  {%- set leaf_id_int = leaf.id | int %}
+  {%- if leaf_id_int % 2 != 0 %}
+    - group: L2_{{ 'L%02d' | format(leaf_id_int) }}_{{ 'L%02d' | format(leaf_id_int + 1) }}
+      uplink_switches:
+        - {{ 'L%02d' | format(leaf_id_int) }}
+        - {{ 'L%02d' | format(leaf_id_int + 1) }}
+      nodes:
+  {%- endif %}
+        - name: L2{{ leaf.hostname }}
+          id: {{ leaf.id }}
+          mgmt_ip: {{ leaf.management_ip }}
+          uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+{%- endfor %}

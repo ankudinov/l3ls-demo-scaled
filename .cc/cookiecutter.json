@@ -88,21 +88,24 @@
                 "uplink_switches": [
                     "S01",
                     "S02",
-                    "S03"
+                    "S03",
+                    "S04"
                 ],
                 "uplink_switch_interfaces": [
+                    "Ethernet1",
                     "Ethernet1",
                     "Ethernet1",
                     "Ethernet1"
                 ],
                 "uplink_interfaces": [
-                    "Ethernet51",
-                    "Ethernet52",
-                    "Ethernet53"
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
                 ],
                 "mlag_interfaces": [
-                    "Ethernet49",
-                    "Ethernet50"
+                    "Ethernet31",
+                    "Ethernet32"
                 ]
             },
             {
@@ -114,21 +117,24 @@
                 "uplink_switches": [
                     "S01",
                     "S02",
-                    "S03"
+                    "S03",
+                    "S04"
                 ],
                 "uplink_switch_interfaces": [
+                    "Ethernet2",
                     "Ethernet2",
                     "Ethernet2",
                     "Ethernet2"
                 ],
                 "uplink_interfaces": [
-                    "Ethernet51",
-                    "Ethernet52",
-                    "Ethernet53"
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
                 ],
                 "mlag_interfaces": [
-                    "Ethernet49",
-                    "Ethernet50"
+                    "Ethernet31",
+                    "Ethernet32"
                 ]
             },
             {
@@ -140,21 +146,24 @@
                 "uplink_switches": [
                     "S01",
                     "S02",
-                    "S03"
+                    "S03",
+                    "S04"
                 ],
                 "uplink_switch_interfaces": [
+                    "Ethernet3",
                     "Ethernet3",
                     "Ethernet3",
                     "Ethernet3"
                 ],
                 "uplink_interfaces": [
-                    "Ethernet51",
-                    "Ethernet52",
-                    "Ethernet53"
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
                 ],
                 "mlag_interfaces": [
-                    "Ethernet49",
-                    "Ethernet50"
+                    "Ethernet31",
+                    "Ethernet32"
                 ]
             },
             {
@@ -166,21 +175,24 @@
                 "uplink_switches": [
                     "S01",
                     "S02",
-                    "S03"
+                    "S03",
+                    "S04"
                 ],
                 "uplink_switch_interfaces": [
+                    "Ethernet4",
                     "Ethernet4",
                     "Ethernet4",
                     "Ethernet4"
                 ],
                 "uplink_interfaces": [
-                    "Ethernet51",
-                    "Ethernet52",
-                    "Ethernet53"
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
                 ],
                 "mlag_interfaces": [
-                    "Ethernet49",
-                    "Ethernet50"
+                    "Ethernet31",
+                    "Ethernet32"
                 ]
             },
             {
@@ -189,10 +201,28 @@
                 "management_ip": "192.168.0.105/24",
                 "bgp_as": "65103",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet5",
+                    "Ethernet5",
+                    "Ethernet5",
+                    "Ethernet5"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "6",
@@ -200,10 +230,28 @@
                 "management_ip": "192.168.0.106/24",
                 "bgp_as": "65103",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet6",
+                    "Ethernet6",
+                    "Ethernet6",
+                    "Ethernet6"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "7",
@@ -211,10 +259,28 @@
                 "management_ip": "192.168.0.107/24",
                 "bgp_as": "65104",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet7",
+                    "Ethernet7",
+                    "Ethernet7",
+                    "Ethernet7"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "8",
@@ -222,10 +288,28 @@
                 "management_ip": "192.168.0.108/24",
                 "bgp_as": "65104",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet8",
+                    "Ethernet8",
+                    "Ethernet8",
+                    "Ethernet8"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "9",
@@ -233,10 +317,28 @@
                 "management_ip": "192.168.0.109/24",
                 "bgp_as": "65105",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet9",
+                    "Ethernet9",
+                    "Ethernet9",
+                    "Ethernet9"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "10",
@@ -244,10 +346,28 @@
                 "management_ip": "192.168.0.110/24",
                 "bgp_as": "65105",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet10",
+                    "Ethernet10",
+                    "Ethernet10",
+                    "Ethernet10"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "11",
@@ -255,10 +375,28 @@
                 "management_ip": "192.168.0.111/24",
                 "bgp_as": "65106",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet11",
+                    "Ethernet11",
+                    "Ethernet11",
+                    "Ethernet11"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "12",
@@ -266,10 +404,28 @@
                 "management_ip": "192.168.0.112/24",
                 "bgp_as": "65106",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet12",
+                    "Ethernet12",
+                    "Ethernet12",
+                    "Ethernet12"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "13",
@@ -277,10 +433,28 @@
                 "management_ip": "192.168.0.113/24",
                 "bgp_as": "65107",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet13",
+                    "Ethernet13",
+                    "Ethernet13",
+                    "Ethernet13"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "14",
@@ -288,10 +462,28 @@
                 "management_ip": "192.168.0.114/24",
                 "bgp_as": "65107",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet14",
+                    "Ethernet14",
+                    "Ethernet14",
+                    "Ethernet14"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "15",
@@ -299,10 +491,28 @@
                 "management_ip": "192.168.0.115/24",
                 "bgp_as": "65108",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet15",
+                    "Ethernet15",
+                    "Ethernet15",
+                    "Ethernet15"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "16",
@@ -310,10 +520,28 @@
                 "management_ip": "192.168.0.116/24",
                 "bgp_as": "65108",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet16",
+                    "Ethernet16",
+                    "Ethernet16",
+                    "Ethernet16"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "17",
@@ -321,10 +549,28 @@
                 "management_ip": "192.168.0.117/24",
                 "bgp_as": "65109",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet17",
+                    "Ethernet17",
+                    "Ethernet17",
+                    "Ethernet17"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "18",
@@ -332,10 +578,28 @@
                 "management_ip": "192.168.0.118/24",
                 "bgp_as": "65109",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet18",
+                    "Ethernet18",
+                    "Ethernet18",
+                    "Ethernet18"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "19",
@@ -343,10 +607,28 @@
                 "management_ip": "192.168.0.119/24",
                 "bgp_as": "65110",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet19",
+                    "Ethernet19",
+                    "Ethernet19",
+                    "Ethernet19"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             },
             {
                 "id": "20",
@@ -354,10 +636,28 @@
                 "management_ip": "192.168.0.120/24",
                 "bgp_as": "65110",
                 "platform": "cEOS",
-                "uplink_switches": [],
-                "uplink_switch_interfaces": [],
-                "uplink_interfaces": [],
-                "mlag_interfaces": []
+                "uplink_switches": [
+                    "S01",
+                    "S02",
+                    "S03",
+                    "S04"
+                ],
+                "uplink_switch_interfaces": [
+                    "Ethernet20",
+                    "Ethernet20",
+                    "Ethernet20",
+                    "Ethernet20"
+                ],
+                "uplink_interfaces": [
+                    "Ethernet21",
+                    "Ethernet22",
+                    "Ethernet23",
+                    "Ethernet24"
+                ],
+                "mlag_interfaces": [
+                    "Ethernet31",
+                    "Ethernet32"
+                ]
             }
         ],
         "fabric_l2leaf_inventory": [
@@ -516,99 +816,603 @@
         "fabric_cabling_plan": [
             {
                 "local_switch": "L01",
-                "local_interface": "e51",
+                "local_interface": "e21",
                 "remote_switch": "S01",
                 "remote_interface": "e1"
             },
             {
                 "local_switch": "L01",
-                "local_interface": "e52",
+                "local_interface": "e22",
                 "remote_switch": "S02",
                 "remote_interface": "e1"
             },
             {
                 "local_switch": "L01",
-                "local_interface": "e53",
+                "local_interface": "e23",
                 "remote_switch": "S03",
                 "remote_interface": "e1"
             },
             {
+                "local_switch": "L01",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e1"
+            },
+            {
                 "local_switch": "L02",
-                "local_interface": "e51",
+                "local_interface": "e21",
                 "remote_switch": "S01",
                 "remote_interface": "e2"
             },
             {
                 "local_switch": "L02",
-                "local_interface": "e52",
+                "local_interface": "e22",
                 "remote_switch": "S02",
                 "remote_interface": "e2"
             },
             {
                 "local_switch": "L02",
-                "local_interface": "e53",
+                "local_interface": "e23",
                 "remote_switch": "S03",
                 "remote_interface": "e2"
             },
             {
+                "local_switch": "L02",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e2"
+            },
+            {
                 "local_switch": "L03",
-                "local_interface": "e51",
+                "local_interface": "e21",
                 "remote_switch": "S01",
                 "remote_interface": "e3"
             },
             {
                 "local_switch": "L03",
-                "local_interface": "e52",
+                "local_interface": "e22",
                 "remote_switch": "S02",
                 "remote_interface": "e3"
             },
             {
                 "local_switch": "L03",
-                "local_interface": "e53",
+                "local_interface": "e23",
                 "remote_switch": "S03",
                 "remote_interface": "e3"
             },
             {
+                "local_switch": "L03",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e3"
+            },
+            {
                 "local_switch": "L04",
-                "local_interface": "e51",
+                "local_interface": "e21",
                 "remote_switch": "S01",
                 "remote_interface": "e4"
             },
             {
                 "local_switch": "L04",
-                "local_interface": "e52",
+                "local_interface": "e22",
                 "remote_switch": "S02",
                 "remote_interface": "e4"
             },
             {
                 "local_switch": "L04",
-                "local_interface": "e53",
+                "local_interface": "e23",
                 "remote_switch": "S03",
                 "remote_interface": "e4"
+            },
+            {
+                "local_switch": "L04",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e4"
+            },
+            {
+                "local_switch": "L05",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e5"
+            },
+            {
+                "local_switch": "L05",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e5"
+            },
+            {
+                "local_switch": "L05",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e5"
+            },
+            {
+                "local_switch": "L05",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e5"
+            },
+            {
+                "local_switch": "L06",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e6"
+            },
+            {
+                "local_switch": "L06",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e6"
+            },
+            {
+                "local_switch": "L06",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e6"
+            },
+            {
+                "local_switch": "L06",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e6"
+            },
+            {
+                "local_switch": "L07",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e7"
+            },
+            {
+                "local_switch": "L07",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e7"
+            },
+            {
+                "local_switch": "L07",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e7"
+            },
+            {
+                "local_switch": "L07",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e7"
+            },
+            {
+                "local_switch": "L08",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e8"
+            },
+            {
+                "local_switch": "L08",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e8"
+            },
+            {
+                "local_switch": "L08",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e8"
+            },
+            {
+                "local_switch": "L08",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e8"
+            },
+            {
+                "local_switch": "L09",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e9"
+            },
+            {
+                "local_switch": "L09",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e9"
+            },
+            {
+                "local_switch": "L09",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e9"
+            },
+            {
+                "local_switch": "L09",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e9"
+            },
+            {
+                "local_switch": "L10",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e10"
+            },
+            {
+                "local_switch": "L10",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e10"
+            },
+            {
+                "local_switch": "L10",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e10"
+            },
+            {
+                "local_switch": "L10",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e10"
+            },
+            {
+                "local_switch": "L11",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e11"
+            },
+            {
+                "local_switch": "L11",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e11"
+            },
+            {
+                "local_switch": "L11",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e11"
+            },
+            {
+                "local_switch": "L11",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e11"
+            },
+            {
+                "local_switch": "L12",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e12"
+            },
+            {
+                "local_switch": "L12",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e12"
+            },
+            {
+                "local_switch": "L12",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e12"
+            },
+            {
+                "local_switch": "L12",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e12"
+            },
+            {
+                "local_switch": "L13",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e13"
+            },
+            {
+                "local_switch": "L13",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e13"
+            },
+            {
+                "local_switch": "L13",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e13"
+            },
+            {
+                "local_switch": "L13",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e13"
+            },
+            {
+                "local_switch": "L14",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e14"
+            },
+            {
+                "local_switch": "L14",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e14"
+            },
+            {
+                "local_switch": "L14",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e14"
+            },
+            {
+                "local_switch": "L14",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e14"
+            },
+            {
+                "local_switch": "L15",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e15"
+            },
+            {
+                "local_switch": "L15",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e15"
+            },
+            {
+                "local_switch": "L15",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e15"
+            },
+            {
+                "local_switch": "L15",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e15"
+            },
+            {
+                "local_switch": "L16",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e16"
+            },
+            {
+                "local_switch": "L16",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e16"
+            },
+            {
+                "local_switch": "L16",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e16"
+            },
+            {
+                "local_switch": "L16",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e16"
+            },
+            {
+                "local_switch": "L17",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e17"
+            },
+            {
+                "local_switch": "L17",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e17"
+            },
+            {
+                "local_switch": "L17",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e17"
+            },
+            {
+                "local_switch": "L17",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e17"
+            },
+            {
+                "local_switch": "L18",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e18"
+            },
+            {
+                "local_switch": "L18",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e18"
+            },
+            {
+                "local_switch": "L18",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e18"
+            },
+            {
+                "local_switch": "L18",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e18"
+            },
+            {
+                "local_switch": "L19",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e19"
+            },
+            {
+                "local_switch": "L19",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e19"
+            },
+            {
+                "local_switch": "L19",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e19"
+            },
+            {
+                "local_switch": "L19",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e19"
+            },
+            {
+                "local_switch": "L20",
+                "local_interface": "e21",
+                "remote_switch": "S01",
+                "remote_interface": "e20"
+            },
+            {
+                "local_switch": "L20",
+                "local_interface": "e22",
+                "remote_switch": "S02",
+                "remote_interface": "e20"
+            },
+            {
+                "local_switch": "L20",
+                "local_interface": "e23",
+                "remote_switch": "S03",
+                "remote_interface": "e20"
+            },
+            {
+                "local_switch": "L20",
+                "local_interface": "e24",
+                "remote_switch": "S04",
+                "remote_interface": "e20"
             },
             {
                 "local_switch": "L01",
-                "local_interface": "e49",
+                "local_interface": "e31",
                 "remote_switch": "L02",
-                "remote_interface": "e49"
+                "remote_interface": "e31"
             },
             {
                 "local_switch": "L01",
-                "local_interface": "e50",
+                "local_interface": "e32",
                 "remote_switch": "L02",
-                "remote_interface": "e50"
+                "remote_interface": "e32"
             },
             {
                 "local_switch": "L03",
-                "local_interface": "e49",
+                "local_interface": "e31",
                 "remote_switch": "L04",
-                "remote_interface": "e49"
+                "remote_interface": "e31"
             },
             {
                 "local_switch": "L03",
-                "local_interface": "e50",
+                "local_interface": "e32",
                 "remote_switch": "L04",
-                "remote_interface": "e50"
+                "remote_interface": "e32"
+            },
+            {
+                "local_switch": "L05",
+                "local_interface": "e31",
+                "remote_switch": "L06",
+                "remote_interface": "e31"
+            },
+            {
+                "local_switch": "L05",
+                "local_interface": "e32",
+                "remote_switch": "L06",
+                "remote_interface": "e32"
+            },
+            {
+                "local_switch": "L07",
+                "local_interface": "e31",
+                "remote_switch": "L08",
+                "remote_interface": "e31"
+            },
+            {
+                "local_switch": "L07",
+                "local_interface": "e32",
+                "remote_switch": "L08",
+                "remote_interface": "e32"
+            },
+            {
+                "local_switch": "L09",
+                "local_interface": "e31",
+                "remote_switch": "L10",
+                "remote_interface": "e31"
+            },
+            {
+                "local_switch": "L09",
+                "local_interface": "e32",
+                "remote_switch": "L10",
+                "remote_interface": "e32"
+            },
+            {
+                "local_switch": "L11",
+                "local_interface": "e31",
+                "remote_switch": "L12",
+                "remote_interface": "e31"
+            },
+            {
+                "local_switch": "L11",
+                "local_interface": "e32",
+                "remote_switch": "L12",
+                "remote_interface": "e32"
+            },
+            {
+                "local_switch": "L13",
+                "local_interface": "e31",
+                "remote_switch": "L14",
+                "remote_interface": "e31"
+            },
+            {
+                "local_switch": "L13",
+                "local_interface": "e32",
+                "remote_switch": "L14",
+                "remote_interface": "e32"
+            },
+            {
+                "local_switch": "L15",
+                "local_interface": "e31",
+                "remote_switch": "L16",
+                "remote_interface": "e31"
+            },
+            {
+                "local_switch": "L15",
+                "local_interface": "e32",
+                "remote_switch": "L16",
+                "remote_interface": "e32"
+            },
+            {
+                "local_switch": "L17",
+                "local_interface": "e31",
+                "remote_switch": "L18",
+                "remote_interface": "e31"
+            },
+            {
+                "local_switch": "L17",
+                "local_interface": "e32",
+                "remote_switch": "L18",
+                "remote_interface": "e32"
+            },
+            {
+                "local_switch": "L19",
+                "local_interface": "e31",
+                "remote_switch": "L20",
+                "remote_interface": "e31"
+            },
+            {
+                "local_switch": "L19",
+                "local_interface": "e32",
+                "remote_switch": "L20",
+                "remote_interface": "e32"
             }
         ]
     },

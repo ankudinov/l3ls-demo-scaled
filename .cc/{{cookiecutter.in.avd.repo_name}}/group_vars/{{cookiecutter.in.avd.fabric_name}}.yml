@@ -8,12 +8,12 @@ default_interfaces:
   #   uplink_interfaces: [ Ethernet1-2 ]
   #   downlink_interfaces: [ Ethernet1-8 ]
   - types: [ l3leaf ]
-    # platforms: [ default ]
+    platforms: [ default ]
     # uplink_interfaces: [ Ethernet1-2 ]
     # mlag_interfaces: [ Ethernet3-4 ]
     downlink_interfaces: [ Ethernet11-12 ]
   - types: [ l2leaf ]
-    # platforms: [ default ]
+    platforms: [ default ]
     uplink_interfaces: [ Ethernet11-12 ]
 
 # Spine Switches
@@ -65,18 +65,10 @@ l2leaf:
     platform: cEOS
     spanning_tree_mode: mstp
 
-  node_groups:
-{%- for leaf in cookiecutter.in.fabric_leaf_inventory %}
-  {%- set leaf_id_int = leaf.id | int %}
-  {%- if leaf_id_int % 2 != 0 %}
-    - group: L2_{{ 'L%02d' | format(leaf_id_int) }}_{{ 'L%02d' | format(leaf_id_int + 1) }}
-      uplink_switches:
-        - {{ 'L%02d' | format(leaf_id_int) }}
-        - {{ 'L%02d' | format(leaf_id_int + 1) }}
-      nodes:
-  {%- endif %}
-        - name: L2{{ leaf.hostname }}
-          id: {{ leaf.id }}
-          mgmt_ip: {{ leaf.management_ip }}
-          uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+  nodes:
+{%- for l2leaf in cookiecutter.in.fabric_l2leaf_inventory %}
+    - name: {{ l2leaf.hostname }}
+      id: {{ l2leaf.id }}
+      mgmt_ip: {{ l2leaf.management_ip }}
+      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
 {%- endfor %}

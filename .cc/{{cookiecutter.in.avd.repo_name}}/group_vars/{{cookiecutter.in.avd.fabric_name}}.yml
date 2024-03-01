@@ -64,11 +64,19 @@ l2leaf:
   defaults:
     platform: cEOS
     spanning_tree_mode: mstp
+    uplink_interfaces: [ Ethernet11, Ethernet12 ]
 
   nodes:
 {%- for l2leaf in cookiecutter.in.fabric_l2leaf_inventory %}
+  {%- set leaf_id_int = l2leaf.id | int %}
     - name: {{ l2leaf.hostname }}
       id: {{ l2leaf.id }}
       mgmt_ip: {{ l2leaf.management_ip }}
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+  {%- if leaf_id_int % 2 != 0 %}
+      uplink_switches: [ {{ 'L%02d' | format(leaf_id_int) }}, {{ 'L%02d' | format(leaf_id_int + 1) }} ]
+      uplink_switch_interfaces: [ Ethernet11, Ethernet11 ]
+  {%- else %}
+      uplink_switches: [ {{ 'L%02d' | format(leaf_id_int - 1) }}, {{ 'L%02d' | format(leaf_id_int) }} ]
+      uplink_switch_interfaces: [ Ethernet12, Ethernet12 ]
+  {%- endif %}
 {%- endfor %}

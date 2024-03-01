@@ -241,6 +241,20 @@ port_channel_interfaces:
   trunk_groups:
   - LEAF_PEER_L3
   - MLAG
+- name: Port-Channel11
+  description: L2L01_Po11
+  type: switched
+  shutdown: false
+  mode: trunk
+  vlans: none
+  mlag: 11
+- name: Port-Channel12
+  description: L2L02_Po11
+  type: switched
+  shutdown: false
+  mode: trunk
+  vlans: none
+  mlag: 12
 ethernet_interfaces:
 - name: Ethernet31
   peer: L02
@@ -261,6 +275,26 @@ ethernet_interfaces:
   shutdown: false
   channel_group:
     id: 31
+    mode: active
+- name: Ethernet11
+  peer: L2L01
+  peer_interface: Ethernet11
+  peer_type: l2leaf
+  description: L2L01_Ethernet11
+  shutdown: false
+  type: port-channel-member
+  channel_group:
+    id: 11
+    mode: active
+- name: Ethernet12
+  peer: L2L02
+  peer_interface: Ethernet11
+  peer_type: l2leaf
+  description: L2L02_Ethernet11
+  shutdown: false
+  type: port-channel-member
+  channel_group:
+    id: 12
     mode: active
 - name: Ethernet21
   peer: S01

@@ -169,85 +169,106 @@ l2leaf:
   defaults:
     platform: cEOS
     spanning_tree_mode: mstp
+    uplink_interfaces: [ Ethernet11, Ethernet12 ]
 
   nodes:
     - name: L2L01
       id: 1
       mgmt_ip: 192.168.0.201/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L01, L02 ]
+      uplink_switch_interfaces: [ Ethernet11, Ethernet11 ]
     - name: L2L02
       id: 2
       mgmt_ip: 192.168.0.202/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L01, L02 ]
+      uplink_switch_interfaces: [ Ethernet12, Ethernet12 ]
     - name: L2L03
       id: 3
       mgmt_ip: 192.168.0.203/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L03, L04 ]
+      uplink_switch_interfaces: [ Ethernet11, Ethernet11 ]
     - name: L2L04
       id: 4
       mgmt_ip: 192.168.0.204/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L03, L04 ]
+      uplink_switch_interfaces: [ Ethernet12, Ethernet12 ]
     - name: L2L05
       id: 5
       mgmt_ip: 192.168.0.205/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L05, L06 ]
+      uplink_switch_interfaces: [ Ethernet11, Ethernet11 ]
     - name: L2L06
       id: 6
       mgmt_ip: 192.168.0.206/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L05, L06 ]
+      uplink_switch_interfaces: [ Ethernet12, Ethernet12 ]
     - name: L2L07
       id: 7
       mgmt_ip: 192.168.0.207/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L07, L08 ]
+      uplink_switch_interfaces: [ Ethernet11, Ethernet11 ]
     - name: L2L08
       id: 8
       mgmt_ip: 192.168.0.208/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L07, L08 ]
+      uplink_switch_interfaces: [ Ethernet12, Ethernet12 ]
     - name: L2L09
       id: 9
       mgmt_ip: 192.168.0.209/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L09, L10 ]
+      uplink_switch_interfaces: [ Ethernet11, Ethernet11 ]
     - name: L2L10
       id: 10
       mgmt_ip: 192.168.0.210/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L09, L10 ]
+      uplink_switch_interfaces: [ Ethernet12, Ethernet12 ]
     - name: L2L11
       id: 11
       mgmt_ip: 192.168.0.211/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L11, L12 ]
+      uplink_switch_interfaces: [ Ethernet11, Ethernet11 ]
     - name: L2L12
       id: 12
       mgmt_ip: 192.168.0.212/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L11, L12 ]
+      uplink_switch_interfaces: [ Ethernet12, Ethernet12 ]
     - name: L2L13
       id: 13
       mgmt_ip: 192.168.0.213/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L13, L14 ]
+      uplink_switch_interfaces: [ Ethernet11, Ethernet11 ]
     - name: L2L14
       id: 14
       mgmt_ip: 192.168.0.214/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L13, L14 ]
+      uplink_switch_interfaces: [ Ethernet12, Ethernet12 ]
     - name: L2L15
       id: 15
       mgmt_ip: 192.168.0.215/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L15, L16 ]
+      uplink_switch_interfaces: [ Ethernet11, Ethernet11 ]
     - name: L2L16
       id: 16
       mgmt_ip: 192.168.0.216/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L15, L16 ]
+      uplink_switch_interfaces: [ Ethernet12, Ethernet12 ]
     - name: L2L17
       id: 17
       mgmt_ip: 192.168.0.217/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L17, L18 ]
+      uplink_switch_interfaces: [ Ethernet11, Ethernet11 ]
     - name: L2L18
       id: 18
       mgmt_ip: 192.168.0.218/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L17, L18 ]
+      uplink_switch_interfaces: [ Ethernet12, Ethernet12 ]
     - name: L2L19
       id: 19
       mgmt_ip: 192.168.0.219/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L19, L20 ]
+      uplink_switch_interfaces: [ Ethernet11, Ethernet11 ]
     - name: L2L20
       id: 20
       mgmt_ip: 192.168.0.220/24
-      uplink_switch_interfaces: [ Ethernet11, Ethernet12 ]
+      uplink_switches: [ L19, L20 ]
+      uplink_switch_interfaces: [ Ethernet12, Ethernet12 ]

@@ -1,0 +1,92 @@
+---
+all:
+  children:
+
+    AVD_FABRIC:
+      children:
+
+        AVD_FABRIC_SPINES:
+          vars:
+            type: spine
+          hosts:
+            S01:
+              ansible_host: 192.168.0.11
+            S02:
+              ansible_host: 192.168.0.12
+            S03:
+              ansible_host: 192.168.0.13
+            S04:
+              ansible_host: 192.168.0.14
+
+        AVD_FABRIC_LEAFS:
+          vars:
+            type: l3leaf
+          children:
+            pod0:
+              hosts:
+                L01:
+                  ansible_host: 192.168.0.101
+                L02:
+                  ansible_host: 192.168.0.102
+            pod1:
+              hosts:
+                L03:
+                  ansible_host: 192.168.0.103
+                L04:
+                  ansible_host: 192.168.0.104
+            pod2:
+              hosts:
+                L05:
+                  ansible_host: 192.168.0.105
+                L06:
+                  ansible_host: 192.168.0.106
+            pod3:
+              hosts:
+                L07:
+                  ansible_host: 192.168.0.107
+                L08:
+                  ansible_host: 192.168.0.108
+            pod4:
+              hosts:
+                L09:
+                  ansible_host: 192.168.0.109
+                L10:
+                  ansible_host: 192.168.0.110
+            pod5:
+              hosts:
+                L11:
+                  ansible_host: 192.168.0.111
+                L12:
+                  ansible_host: 192.168.0.112
+            pod6:
+              hosts:
+                L13:
+                  ansible_host: 192.168.0.113
+                L14:
+                  ansible_host: 192.168.0.114
+            pod7:
+              hosts:
+                L15:
+                  ansible_host: 192.168.0.115
+                L16:
+                  ansible_host: 192.168.0.116
+            pod8:
+              hosts:
+                L17:
+                  ansible_host: 192.168.0.117
+                L18:
+                  ansible_host: 192.168.0.118
+            pod9:
+              hosts:
+                L19:
+                  ansible_host: 192.168.0.119
+                L20:
+                  ansible_host: 192.168.0.120
+
+    AVD_FABRIC_ENDPOINTS:
+      children:
+        AVD_FABRIC_LEAFS:
+
+    AVD_FABRIC_TENANTS:
+      children:
+        AVD_FABRIC_LEAFS:

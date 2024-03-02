@@ -1,0 +1,206 @@
+name: AVD_FABRIC-clab
+prefix: ""
+
+mgmt:
+  network: custom_mgmt
+  ipv4-subnet: 192.168.0.0/24
+
+topology:
+  kinds:
+    ceos:
+      enforce-startup-config: true
+      image: ceos-lab:latest
+  defaults:
+    kind: ceos
+    startup-config: init-configs/ceos-init.cfg
+  nodes:
+    S01:
+      mgmt-ipv4: 192.168.0.11
+    S02:
+      mgmt-ipv4: 192.168.0.12
+    S03:
+      mgmt-ipv4: 192.168.0.13
+    S04:
+      mgmt-ipv4: 192.168.0.14
+    L01:
+      mgmt-ipv4: 192.168.0.101
+    L02:
+      mgmt-ipv4: 192.168.0.102
+    L03:
+      mgmt-ipv4: 192.168.0.103
+    L04:
+      mgmt-ipv4: 192.168.0.104
+    L05:
+      mgmt-ipv4: 192.168.0.105
+    L06:
+      mgmt-ipv4: 192.168.0.106
+    L07:
+      mgmt-ipv4: 192.168.0.107
+    L08:
+      mgmt-ipv4: 192.168.0.108
+    L09:
+      mgmt-ipv4: 192.168.0.109
+    L10:
+      mgmt-ipv4: 192.168.0.110
+    L11:
+      mgmt-ipv4: 192.168.0.111
+    L12:
+      mgmt-ipv4: 192.168.0.112
+    L13:
+      mgmt-ipv4: 192.168.0.113
+    L14:
+      mgmt-ipv4: 192.168.0.114
+    L15:
+      mgmt-ipv4: 192.168.0.115
+    L16:
+      mgmt-ipv4: 192.168.0.116
+    L17:
+      mgmt-ipv4: 192.168.0.117
+    L18:
+      mgmt-ipv4: 192.168.0.118
+    L19:
+      mgmt-ipv4: 192.168.0.119
+    L20:
+      mgmt-ipv4: 192.168.0.120
+    L2L01:
+      mgmt-ipv4: 192.168.0.201
+    L2L02:
+      mgmt-ipv4: 192.168.0.202
+    L2L03:
+      mgmt-ipv4: 192.168.0.203
+    L2L04:
+      mgmt-ipv4: 192.168.0.204
+    L2L05:
+      mgmt-ipv4: 192.168.0.205
+    L2L06:
+      mgmt-ipv4: 192.168.0.206
+    L2L07:
+      mgmt-ipv4: 192.168.0.207
+    L2L08:
+      mgmt-ipv4: 192.168.0.208
+    L2L09:
+      mgmt-ipv4: 192.168.0.209
+    L2L10:
+      mgmt-ipv4: 192.168.0.210
+    L2L11:
+      mgmt-ipv4: 192.168.0.211
+    L2L12:
+      mgmt-ipv4: 192.168.0.212
+    L2L13:
+      mgmt-ipv4: 192.168.0.213
+    L2L14:
+      mgmt-ipv4: 192.168.0.214
+    L2L15:
+      mgmt-ipv4: 192.168.0.215
+    L2L16:
+      mgmt-ipv4: 192.168.0.216
+    L2L17:
+      mgmt-ipv4: 192.168.0.217
+    L2L18:
+      mgmt-ipv4: 192.168.0.218
+    L2L19:
+      mgmt-ipv4: 192.168.0.219
+    L2L20:
+      mgmt-ipv4: 192.168.0.220
+
+  links:
+  - endpoints: ["L01:eth21", "S01:eth1"]
+  - endpoints: ["L01:eth22", "S02:eth1"]
+  - endpoints: ["L01:eth23", "S03:eth1"]
+  - endpoints: ["L01:eth24", "S04:eth1"]
+  - endpoints: ["L02:eth21", "S01:eth2"]
+  - endpoints: ["L02:eth22", "S02:eth2"]
+  - endpoints: ["L02:eth23", "S03:eth2"]
+  - endpoints: ["L02:eth24", "S04:eth2"]
+  - endpoints: ["L03:eth21", "S01:eth3"]
+  - endpoints: ["L03:eth22", "S02:eth3"]
+  - endpoints: ["L03:eth23", "S03:eth3"]
+  - endpoints: ["L03:eth24", "S04:eth3"]
+  - endpoints: ["L04:eth21", "S01:eth4"]
+  - endpoints: ["L04:eth22", "S02:eth4"]
+  - endpoints: ["L04:eth23", "S03:eth4"]
+  - endpoints: ["L04:eth24", "S04:eth4"]
+  - endpoints: ["L05:eth21", "S01:eth5"]
+  - endpoints: ["L05:eth22", "S02:eth5"]
+  - endpoints: ["L05:eth23", "S03:eth5"]
+  - endpoints: ["L05:eth24", "S04:eth5"]
+  - endpoints: ["L06:eth21", "S01:eth6"]
+  - endpoints: ["L06:eth22", "S02:eth6"]
+  - endpoints: ["L06:eth23", "S03:eth6"]
+  - endpoints: ["L06:eth24", "S04:eth6"]
+  - endpoints: ["L07:eth21", "S01:eth7"]
+  - endpoints: ["L07:eth22", "S02:eth7"]
+  - endpoints: ["L07:eth23", "S03:eth7"]
+  - endpoints: ["L07:eth24", "S04:eth7"]
+  - endpoints: ["L08:eth21", "S01:eth8"]
+  - endpoints: ["L08:eth22", "S02:eth8"]
+  - endpoints: ["L08:eth23", "S03:eth8"]
+  - endpoints: ["L08:eth24", "S04:eth8"]
+  - endpoints: ["L09:eth21", "S01:eth9"]
+  - endpoints: ["L09:eth22", "S02:eth9"]
+  - endpoints: ["L09:eth23", "S03:eth9"]
+  - endpoints: ["L09:eth24", "S04:eth9"]
+  - endpoints: ["L10:eth21", "S01:eth10"]
+  - endpoints: ["L10:eth22", "S02:eth10"]
+  - endpoints: ["L10:eth23", "S03:eth10"]
+  - endpoints: ["L10:eth24", "S04:eth10"]
+  - endpoints: ["L11:eth21", "S01:eth11"]
+  - endpoints: ["L11:eth22", "S02:eth11"]
+  - endpoints: ["L11:eth23", "S03:eth11"]
+  - endpoints: ["L11:eth24", "S04:eth11"]
+  - endpoints: ["L12:eth21", "S01:eth12"]
+  - endpoints: ["L12:eth22", "S02:eth12"]
+  - endpoints: ["L12:eth23", "S03:eth12"]
+  - endpoints: ["L12:eth24", "S04:eth12"]
+  - endpoints: ["L13:eth21", "S01:eth13"]
+  - endpoints: ["L13:eth22", "S02:eth13"]
+  - endpoints: ["L13:eth23", "S03:eth13"]
+  - endpoints: ["L13:eth24", "S04:eth13"]
+  - endpoints: ["L14:eth21", "S01:eth14"]
+  - endpoints: ["L14:eth22", "S02:eth14"]
+  - endpoints: ["L14:eth23", "S03:eth14"]
+  - endpoints: ["L14:eth24", "S04:eth14"]
+  - endpoints: ["L15:eth21", "S01:eth15"]
+  - endpoints: ["L15:eth22", "S02:eth15"]
+  - endpoints: ["L15:eth23", "S03:eth15"]
+  - endpoints: ["L15:eth24", "S04:eth15"]
+  - endpoints: ["L16:eth21", "S01:eth16"]
+  - endpoints: ["L16:eth22", "S02:eth16"]
+  - endpoints: ["L16:eth23", "S03:eth16"]
+  - endpoints: ["L16:eth24", "S04:eth16"]
+  - endpoints: ["L17:eth21", "S01:eth17"]
+  - endpoints: ["L17:eth22", "S02:eth17"]
+  - endpoints: ["L17:eth23", "S03:eth17"]
+  - endpoints: ["L17:eth24", "S04:eth17"]
+  - endpoints: ["L18:eth21", "S01:eth18"]
+  - endpoints: ["L18:eth22", "S02:eth18"]
+  - endpoints: ["L18:eth23", "S03:eth18"]
+  - endpoints: ["L18:eth24", "S04:eth18"]
+  - endpoints: ["L19:eth21", "S01:eth19"]
+  - endpoints: ["L19:eth22", "S02:eth19"]
+  - endpoints: ["L19:eth23", "S03:eth19"]
+  - endpoints: ["L19:eth24", "S04:eth19"]
+  - endpoints: ["L20:eth21", "S01:eth20"]
+  - endpoints: ["L20:eth22", "S02:eth20"]
+  - endpoints: ["L20:eth23", "S03:eth20"]
+  - endpoints: ["L20:eth24", "S04:eth20"]
+  - endpoints: ["L01:eth31", "L02:eth31"]
+  - endpoints: ["L01:eth32", "L02:eth32"]
+  - endpoints: ["L03:eth31", "L04:eth31"]
+  - endpoints: ["L03:eth32", "L04:eth32"]
+  - endpoints: ["L05:eth31", "L06:eth31"]
+  - endpoints: ["L05:eth32", "L06:eth32"]
+  - endpoints: ["L07:eth31", "L08:eth31"]
+  - endpoints: ["L07:eth32", "L08:eth32"]
+  - endpoints: ["L09:eth31", "L10:eth31"]
+  - endpoints: ["L09:eth32", "L10:eth32"]
+  - endpoints: ["L11:eth31", "L12:eth31"]
+  - endpoints: ["L11:eth32", "L12:eth32"]
+  - endpoints: ["L13:eth31", "L14:eth31"]
+  - endpoints: ["L13:eth32", "L14:eth32"]
+  - endpoints: ["L15:eth31", "L16:eth31"]
+  - endpoints: ["L15:eth32", "L16:eth32"]
+  - endpoints: ["L17:eth31", "L18:eth31"]
+  - endpoints: ["L17:eth32", "L18:eth32"]
+  - endpoints: ["L19:eth31", "L20:eth31"]
+  - endpoints: ["L19:eth32", "L20:eth32"]

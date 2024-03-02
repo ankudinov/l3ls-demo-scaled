@@ -5,7 +5,7 @@
             "FROM_IMAGE": "ghcr.io/aristanetworks/avd/universal",
             "FROM_VARIANT": "python3.11-avd-v4.6.0",
             "USERNAME": "avd",
-            "CLAB_VERSION": "0.51.3",
+            "CLAB_VERSION": "0.44.3",
             "CV_API_TOKEN": "${localEnv:CV_API_TOKEN}"
         }
     },
@@ -17,7 +17,7 @@
         "memory": "64gb",
         "storage": "128gb"
     },
-    "postCreateCommand": "ardl get eos --image-type cEOS --latest --import-docker",
+    "postCreateCommand": "ardl get eos --image-type cEOS --version 4.30.3M  --import-docker",
     "customizations": {
         "vscode": {
             "extensions": [

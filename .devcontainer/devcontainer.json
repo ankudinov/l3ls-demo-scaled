@@ -12,6 +12,11 @@
     "containerEnv": {
         "ARISTA_TOKEN": "${localEnv:ARTOKEN}"
     },
+    "hostRequirements": {
+        "cpus": 16,
+        "memory": "64gb",
+        "storage": "128gb"
+    },
     "postCreateCommand": "ardl get eos --image-type cEOS --latest --import-docker",
     "customizations": {
         "vscode": {

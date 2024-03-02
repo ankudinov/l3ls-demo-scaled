@@ -1,18 +1,29 @@
 {
-    "image": "ghcr.io/aristanetworks/avd/universal:python3.11-avd-v4.6.0",
-    "postCreateCommand": "bash -c \"$(curl -sL https://get.containerlab.dev)\"; pip3 install passlib git+https://github.com/ankudinov/cook_and_cut.git; echo 'eval \"$(register-python-argcomplete ccAVD)\"' >> ~/.zshrc",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "FROM_IMAGE": "ghcr.io/aristanetworks/avd/universal",
+            "FROM_VARIANT": "python3.11-avd-v4.6.0",
+            "USERNAME": "avd",
+            "CLAB_VERSION": "${localEnv:CLAB_VERSION}",
+            "CV_API_TOKEN": "${localEnv:CV_API_TOKEN}"
+        }
+    },
+    "containerEnv": {
+        "ARISTA_TOKEN": "${localEnv:ARTOKEN}"
+    },
+    "postCreateCommand": "ardl get eos --image-type cEOS --latest --import-docker",
     "customizations": {
         "vscode": {
             "extensions": [
-                // install Marp extension for VScode to build slides
-                "marp-team.marp-vscode",
                 // git essentials
                 "piotrpalarz.vscode-gitignore-generator",
                 "mhutchie.git-graph",
                 "donjayamanne.githistory",
                 // spell checker
                 "streetsidesoftware.code-spell-checker",
-                // excalidraw, drawio and tldraw
+                // drawio and tldraw
+                // excalidraw is pre-installed in universal
                 "hediet.vscode-drawio",
                 "tldraw-org.tldraw-vscode",
                 // markdown
@@ -21,7 +32,6 @@
                 "DavidAnson.vscode-markdownlint",
                 // various tools
                 "tuxtina.json2yaml",
-                "vscode-icons-team.vscode-icons",
                 "mutantdino.resourcemonitor"
             ]
         }

@@ -6,7 +6,7 @@ help: ## Display help message
 
 .PHONY: start
 start: ## Deploy ceos lab
-	sudo containerlab deploy --debug --topo $(CURRENT_DIR)/avd_inventory/clab/topology.clab.yml --max-workers 2 --timeout 5m --reconfigure
+	sudo containerlab deploy --debug --topo $(CURRENT_DIR)/avd_inventory/clab/topology.clab.yml --max-workers 15 --timeout 5m --reconfigure
 
 .PHONY: stop
 stop: ## Destroy ceos lab

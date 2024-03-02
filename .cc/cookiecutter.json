@@ -14,7 +14,7 @@
             {
                 "server_name": "test-server",
                 "switch_hostname": "L01",
-                "switch_port": "Ethernet68",
+                "switch_port": "Ethernet1",
                 "description": "trunk-to-test-server",
                 "port_channel_mode": "active",
                 "switchport_mode": "trunk",
@@ -23,7 +23,7 @@
             {
                 "server_name": "test-server",
                 "switch_hostname": "L02",
-                "switch_port": "Ethernet68",
+                "switch_port": "Ethernet1",
                 "description": "trunk-to-test-server",
                 "port_channel_mode": "active",
                 "switchport_mode": "trunk",
@@ -32,7 +32,7 @@
             {
                 "server_name": "test-server-2",
                 "switch_hostname": "L03",
-                "switch_port": "Ethernet22",
+                "switch_port": "Ethernet1",
                 "description": "trunk-to-test-server",
                 "port_channel_mode": "on",
                 "switchport_mode": "access",
@@ -41,7 +41,7 @@
             {
                 "server_name": "test-server-2",
                 "switch_hostname": "L04",
-                "switch_port": "Ethernet22",
+                "switch_port": "Ethernet1",
                 "description": "trunk-to-test-server",
                 "port_channel_mode": "on",
                 "switchport_mode": "access",
@@ -1460,8 +1460,8 @@
                     "adapters": [
                         {
                             "switch_ports": [
-                                "Ethernet68",
-                                "Ethernet68"
+                                "Ethernet1",
+                                "Ethernet1"
                             ],
                             "switches": [
                                 "L01",
@@ -1481,8 +1481,8 @@
                     "adapters": [
                         {
                             "switch_ports": [
-                                "Ethernet22",
-                                "Ethernet22"
+                                "Ethernet1",
+                                "Ethernet1"
                             ],
                             "switches": [
                                 "L03",

@@ -1,0 +1,7 @@
+---
+connected_endpoints_keys:
+
+  - key: servers
+    type: server
+  - key: fabric_endpoints
+    type: server

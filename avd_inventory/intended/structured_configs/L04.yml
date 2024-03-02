@@ -255,6 +255,13 @@ port_channel_interfaces:
   mode: trunk
   vlans: none
   mlag: 12
+- name: Port-Channel1
+  description: trunk-to-test-server
+  type: switched
+  shutdown: false
+  mode: access
+  vlans: '10'
+  mlag: 1
 ethernet_interfaces:
 - name: Ethernet31
   peer: L03
@@ -332,6 +339,15 @@ ethernet_interfaces:
   mtu: 9214
   type: routed
   ip_address: 172.30.255.31/31
+- name: Ethernet1
+  peer: test-server-2
+  peer_type: server
+  description: trunk-to-test-server
+  shutdown: false
+  type: port-channel-member
+  channel_group:
+    id: 1
+    mode: 'on'
 mlag_configuration:
   domain_id: pod1
   local_interface: Vlan4094

@@ -5,8 +5,8 @@ fabric_endpoints:
     port_channel:
       mode: active
     switch_ports:
-    - Ethernet68
-    - Ethernet68
+    - Ethernet1
+    - Ethernet1
     switches:
     - L01
     - L02
@@ -18,8 +18,8 @@ fabric_endpoints:
     port_channel:
       mode: 'on'
     switch_ports:
-    - Ethernet22
-    - Ethernet22
+    - Ethernet1
+    - Ethernet1
     switches:
     - L03
     - L04

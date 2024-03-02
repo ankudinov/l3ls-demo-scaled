@@ -1,4 +1,5 @@
 Node Type,Node,Node Interface,Peer Type,Peer Node,Peer Interface,Node Interface Enabled
+l3leaf,L01,Ethernet1,server,test-server,,True
 l3leaf,L01,Ethernet11,l2leaf,L2L01,Ethernet11,True
 l3leaf,L01,Ethernet12,l2leaf,L2L02,Ethernet11,True
 l3leaf,L01,Ethernet21,spine,S01,Ethernet1,True
@@ -7,6 +8,7 @@ l3leaf,L01,Ethernet23,spine,S03,Ethernet1,True
 l3leaf,L01,Ethernet24,spine,S04,Ethernet1,True
 l3leaf,L01,Ethernet31,mlag_peer,L02,Ethernet31,True
 l3leaf,L01,Ethernet32,mlag_peer,L02,Ethernet32,True
+l3leaf,L02,Ethernet1,server,test-server,,True
 l3leaf,L02,Ethernet11,l2leaf,L2L01,Ethernet12,True
 l3leaf,L02,Ethernet12,l2leaf,L2L02,Ethernet12,True
 l3leaf,L02,Ethernet21,spine,S01,Ethernet2,True
@@ -55,6 +57,7 @@ l2leaf,L2L19,Ethernet11,l3leaf,L19,Ethernet11,True
 l2leaf,L2L19,Ethernet12,l3leaf,L20,Ethernet11,True
 l2leaf,L2L20,Ethernet11,l3leaf,L19,Ethernet12,True
 l2leaf,L2L20,Ethernet12,l3leaf,L20,Ethernet12,True
+l3leaf,L03,Ethernet1,server,test-server-2,,True
 l3leaf,L03,Ethernet11,l2leaf,L2L03,Ethernet11,True
 l3leaf,L03,Ethernet12,l2leaf,L2L04,Ethernet11,True
 l3leaf,L03,Ethernet21,spine,S01,Ethernet3,True
@@ -63,6 +66,7 @@ l3leaf,L03,Ethernet23,spine,S03,Ethernet3,True
 l3leaf,L03,Ethernet24,spine,S04,Ethernet3,True
 l3leaf,L03,Ethernet31,mlag_peer,L04,Ethernet31,True
 l3leaf,L03,Ethernet32,mlag_peer,L04,Ethernet32,True
+l3leaf,L04,Ethernet1,server,test-server-2,,True
 l3leaf,L04,Ethernet11,l2leaf,L2L03,Ethernet12,True
 l3leaf,L04,Ethernet12,l2leaf,L2L04,Ethernet12,True
 l3leaf,L04,Ethernet21,spine,S01,Ethernet4,True

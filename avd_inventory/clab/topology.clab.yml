@@ -9,7 +9,7 @@ topology:
   kinds:
     ceos:
       enforce-startup-config: true
-      image: arista/ceos:4.31.2F
+      image: arista/ceos:4.30.3M
   defaults:
     kind: ceos
     startup-config: init-configs/ceos-init.cfg

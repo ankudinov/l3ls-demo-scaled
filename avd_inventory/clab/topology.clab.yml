@@ -13,95 +13,190 @@ topology:
   defaults:
     kind: ceos
     startup-config: init-configs/ceos-init.cfg
+    extras:
+      ceos-copy-to-flash:
+        - clab/cv-onboarding-token
+    # an alternative to ceos-copy-to-flash could be bind
+    # keeping the bind settings here just in case
+    # binds:
+    #   - cv-onboarding-token:/mnt/flash/cv-onboarding-token:ro
   nodes:
     S01:
       mgmt-ipv4: 192.168.0.11
+      binds:
+        - sn/S01.txt:/mnt/flash/ceos-config:ro
     S02:
       mgmt-ipv4: 192.168.0.12
+      binds:
+        - sn/S02.txt:/mnt/flash/ceos-config:ro
     S03:
       mgmt-ipv4: 192.168.0.13
+      binds:
+        - sn/S03.txt:/mnt/flash/ceos-config:ro
     S04:
       mgmt-ipv4: 192.168.0.14
+      binds:
+        - sn/S04.txt:/mnt/flash/ceos-config:ro
     L01:
       mgmt-ipv4: 192.168.0.101
+      binds:
+        - sn/L01.txt:/mnt/flash/ceos-config:ro
     L02:
       mgmt-ipv4: 192.168.0.102
+      binds:
+        - sn/L02.txt:/mnt/flash/ceos-config:ro
     L03:
       mgmt-ipv4: 192.168.0.103
+      binds:
+        - sn/L03.txt:/mnt/flash/ceos-config:ro
     L04:
       mgmt-ipv4: 192.168.0.104
+      binds:
+        - sn/L04.txt:/mnt/flash/ceos-config:ro
     L05:
       mgmt-ipv4: 192.168.0.105
+      binds:
+        - sn/L05.txt:/mnt/flash/ceos-config:ro
     L06:
       mgmt-ipv4: 192.168.0.106
+      binds:
+        - sn/L06.txt:/mnt/flash/ceos-config:ro
     L07:
       mgmt-ipv4: 192.168.0.107
+      binds:
+        - sn/L07.txt:/mnt/flash/ceos-config:ro
     L08:
       mgmt-ipv4: 192.168.0.108
+      binds:
+        - sn/L08.txt:/mnt/flash/ceos-config:ro
     L09:
       mgmt-ipv4: 192.168.0.109
+      binds:
+        - sn/L09.txt:/mnt/flash/ceos-config:ro
     L10:
       mgmt-ipv4: 192.168.0.110
+      binds:
+        - sn/L10.txt:/mnt/flash/ceos-config:ro
     L11:
       mgmt-ipv4: 192.168.0.111
+      binds:
+        - sn/L11.txt:/mnt/flash/ceos-config:ro
     L12:
       mgmt-ipv4: 192.168.0.112
+      binds:
+        - sn/L12.txt:/mnt/flash/ceos-config:ro
     L13:
       mgmt-ipv4: 192.168.0.113
+      binds:
+        - sn/L13.txt:/mnt/flash/ceos-config:ro
     L14:
       mgmt-ipv4: 192.168.0.114
+      binds:
+        - sn/L14.txt:/mnt/flash/ceos-config:ro
     L15:
       mgmt-ipv4: 192.168.0.115
+      binds:
+        - sn/L15.txt:/mnt/flash/ceos-config:ro
     L16:
       mgmt-ipv4: 192.168.0.116
+      binds:
+        - sn/L16.txt:/mnt/flash/ceos-config:ro
     L17:
       mgmt-ipv4: 192.168.0.117
+      binds:
+        - sn/L17.txt:/mnt/flash/ceos-config:ro
     L18:
       mgmt-ipv4: 192.168.0.118
+      binds:
+        - sn/L18.txt:/mnt/flash/ceos-config:ro
     L19:
       mgmt-ipv4: 192.168.0.119
+      binds:
+        - sn/L19.txt:/mnt/flash/ceos-config:ro
     L20:
       mgmt-ipv4: 192.168.0.120
+      binds:
+        - sn/L20.txt:/mnt/flash/ceos-config:ro
     L2L01:
       mgmt-ipv4: 192.168.0.201
+      binds:
+        - sn/L2L01.txt:/mnt/flash/ceos-config:ro
     L2L02:
       mgmt-ipv4: 192.168.0.202
+      binds:
+        - sn/L2L02.txt:/mnt/flash/ceos-config:ro
     L2L03:
       mgmt-ipv4: 192.168.0.203
+      binds:
+        - sn/L2L03.txt:/mnt/flash/ceos-config:ro
     L2L04:
       mgmt-ipv4: 192.168.0.204
+      binds:
+        - sn/L2L04.txt:/mnt/flash/ceos-config:ro
     L2L05:
       mgmt-ipv4: 192.168.0.205
+      binds:
+        - sn/L2L05.txt:/mnt/flash/ceos-config:ro
     L2L06:
       mgmt-ipv4: 192.168.0.206
+      binds:
+        - sn/L2L06.txt:/mnt/flash/ceos-config:ro
     L2L07:
       mgmt-ipv4: 192.168.0.207
+      binds:
+        - sn/L2L07.txt:/mnt/flash/ceos-config:ro
     L2L08:
       mgmt-ipv4: 192.168.0.208
+      binds:
+        - sn/L2L08.txt:/mnt/flash/ceos-config:ro
     L2L09:
       mgmt-ipv4: 192.168.0.209
+      binds:
+        - sn/L2L09.txt:/mnt/flash/ceos-config:ro
     L2L10:
       mgmt-ipv4: 192.168.0.210
+      binds:
+        - sn/L2L10.txt:/mnt/flash/ceos-config:ro
     L2L11:
       mgmt-ipv4: 192.168.0.211
+      binds:
+        - sn/L2L11.txt:/mnt/flash/ceos-config:ro
     L2L12:
       mgmt-ipv4: 192.168.0.212
+      binds:
+        - sn/L2L12.txt:/mnt/flash/ceos-config:ro
     L2L13:
       mgmt-ipv4: 192.168.0.213
+      binds:
+        - sn/L2L13.txt:/mnt/flash/ceos-config:ro
     L2L14:
       mgmt-ipv4: 192.168.0.214
+      binds:
+        - sn/L2L14.txt:/mnt/flash/ceos-config:ro
     L2L15:
       mgmt-ipv4: 192.168.0.215
+      binds:
+        - sn/L2L15.txt:/mnt/flash/ceos-config:ro
     L2L16:
       mgmt-ipv4: 192.168.0.216
+      binds:
+        - sn/L2L16.txt:/mnt/flash/ceos-config:ro
     L2L17:
       mgmt-ipv4: 192.168.0.217
+      binds:
+        - sn/L2L17.txt:/mnt/flash/ceos-config:ro
     L2L18:
       mgmt-ipv4: 192.168.0.218
+      binds:
+        - sn/L2L18.txt:/mnt/flash/ceos-config:ro
     L2L19:
       mgmt-ipv4: 192.168.0.219
+      binds:
+        - sn/L2L19.txt:/mnt/flash/ceos-config:ro
     L2L20:
       mgmt-ipv4: 192.168.0.220
+      binds:
+        - sn/L2L20.txt:/mnt/flash/ceos-config:ro
 
   links:
   - endpoints: ["L01:eth21", "S01:eth1"]

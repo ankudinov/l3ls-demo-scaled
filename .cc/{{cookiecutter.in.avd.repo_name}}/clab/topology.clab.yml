@@ -13,18 +13,31 @@ topology:
   defaults:
     kind: ceos
     startup-config: init-configs/ceos-init.cfg
+    extras:
+      ceos-copy-to-flash:
+        - clab/cv-onboarding-token
+    # an alternative to ceos-copy-to-flash could be bind
+    # keeping the bind settings here just in case
+    # binds:
+    #   - cv-onboarding-token:/mnt/flash/cv-onboarding-token:ro
   nodes:
 {%- for spine in cookiecutter.in.fabric_spine_inventory %}
     {{ spine.hostname }}:
       mgmt-ipv4: {{ spine.management_ip.split('/')[0] }}
+      binds:
+        - sn/{{ spine.hostname }}.txt:/mnt/flash/ceos-config:ro
 {%- endfor %}
 {%- for leaf in cookiecutter.in.fabric_leaf_inventory %}
     {{ leaf.hostname }}:
       mgmt-ipv4: {{ leaf.management_ip.split('/')[0] }}
+      binds:
+        - sn/{{ leaf.hostname }}.txt:/mnt/flash/ceos-config:ro
 {%- endfor %}
 {%- for l2leaf in cookiecutter.in.fabric_l2leaf_inventory %}
     {{ l2leaf.hostname }}:
       mgmt-ipv4: {{ l2leaf.management_ip.split('/')[0] }}
+      binds:
+        - sn/{{ l2leaf.hostname }}.txt:/mnt/flash/ceos-config:ro
 {%- endfor %}
 
   links:

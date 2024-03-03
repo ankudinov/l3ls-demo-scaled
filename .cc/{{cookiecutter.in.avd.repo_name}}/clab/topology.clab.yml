@@ -39,6 +39,8 @@ topology:
       binds:
         - sn/{{ l2leaf.hostname }}.txt:/mnt/flash/ceos-config:ro
 {%- endfor %}
+    a_host:
+      mgmt-ipv4: 192.168.0.254
 
   links:
 {%- for link in cookiecutter.in.fabric_cabling_plan %}

@@ -112,6 +112,9 @@ avd_inventory/clab/cv-onboarding-token
 # discard all config backups as we don't need them
 *post_running_config*
 
+# gitignore downloaded cEOS-lab images
+cEOS-lab-*
+
 # ingnore images and other files not to be uploaded to GitHub
 .gitignored/*
 !.gitignored/.gitkeep

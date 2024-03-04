@@ -177,8 +177,8 @@ l2leaf:
       mgmt_ip: 192.168.0.201/24
       uplink_switches: [ L01, L02 ]
       uplink_switch_interfaces: [ Ethernet11, Ethernet11 ]
-    - name: L2L10
-      id: 10
-      mgmt_ip: 192.168.0.210/24
-      uplink_switches: [ L09, L10 ]
+    - name: L2L20
+      id: 20
+      mgmt_ip: 192.168.0.220/24
+      uplink_switches: [ L19, L20 ]
       uplink_switch_interfaces: [ Ethernet12, Ethernet12 ]

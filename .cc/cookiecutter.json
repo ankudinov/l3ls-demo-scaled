@@ -672,9 +672,9 @@
                 "platform": "cEOS"
             },
             {
-                "id": "10",
-                "hostname": "L2L10",
-                "management_ip": "192.168.0.210/24",
+                "id": "20",
+                "hostname": "L2L20",
+                "management_ip": "192.168.0.220/24",
                 "platform": "cEOS"
             }
         ],

@@ -26,6 +26,10 @@ local_users:
     privilege: 15
     role: network-admin
     sha512_password: {% raw %}"{{ ansible_password | password_hash(rounds=5000, salt=1) }}"{% endraw %}
+  - name: avd
+    privilege: 15
+    role: network-admin
+    sha512_password: {% raw %}"{{ avd | password_hash(rounds=5000, salt=1) }}"{% endraw %}
 
 
 ansible_user: arista

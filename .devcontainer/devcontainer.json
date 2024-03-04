@@ -2,7 +2,8 @@
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
-            "FROM_IMAGE": "ghcr.io/aristanetworks/avd/universal",
+            // "FROM_IMAGE": "ghcr.io/aristanetworks/avd/universal",
+            "FROM_IMAGE": "ghcr.io/aristanetworks/ansible-avd/universal",
             "FROM_VARIANT": "python3.11-avd-v4.5.0",
             "USERNAME": "avd",
             "CLAB_VERSION": "0.44.3",

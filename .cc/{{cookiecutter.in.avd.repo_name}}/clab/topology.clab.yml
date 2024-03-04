@@ -41,6 +41,7 @@ topology:
 {%- endfor %}
     a_host:
       mgmt-ipv4: 192.168.0.254
+      startup-config: init-configs/a_host.cfg
 
   links:
 {%- for link in cookiecutter.in.fabric_cabling_plan %}

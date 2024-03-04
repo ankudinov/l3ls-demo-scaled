@@ -13,9 +13,9 @@ topology:
   defaults:
     kind: ceos
     startup-config: init-configs/ceos-init.cfg
-    # extras:
-    #   ceos-copy-to-flash:
-    #     - clab/cv-onboarding-token
+    extras:
+      ceos-copy-to-flash:
+        - clab/cv-onboarding-token
     # an alternative to ceos-copy-to-flash could be bind
     # keeping the bind settings here just in case
     # binds:

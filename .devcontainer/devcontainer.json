@@ -20,7 +20,10 @@
     "runArgs": [
         "--network=host"
     ],
-    "postCreateCommand": "ardl get eos --image-type cEOS --version 4.30.3M  --import-docker",
+    "remoteEnv": {
+		"CONTAINERWSF": "${containerWorkspaceFolder}"
+	},
+    "postCreateCommand": "ardl get eos --image-type cEOS --version 4.30.3M  --import-docker; cp /home/avd/tmp/cv-onboarding-token ${CONTAINERWSF}/avd_inventory/clab/cv-onboarding-token; rm -rf /home/avd/tmp/",
     "customizations": {
         "vscode": {
             "extensions": [

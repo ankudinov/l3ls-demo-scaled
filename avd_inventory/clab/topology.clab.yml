@@ -15,7 +15,7 @@ topology:
     startup-config: init-configs/ceos-init.cfg
     extras:
       ceos-copy-to-flash:
-        - clab/cv-onboarding-token
+        - avd_inventory/clab/cv-onboarding-token
     # an alternative to ceos-copy-to-flash could be bind
     # keeping the bind settings here just in case
     # binds:
@@ -121,82 +121,10 @@ topology:
       mgmt-ipv4: 192.168.0.201
       binds:
         - sn/L2L01.txt:/mnt/flash/ceos-config:ro
-    L2L02:
-      mgmt-ipv4: 192.168.0.202
-      binds:
-        - sn/L2L02.txt:/mnt/flash/ceos-config:ro
-    L2L03:
-      mgmt-ipv4: 192.168.0.203
-      binds:
-        - sn/L2L03.txt:/mnt/flash/ceos-config:ro
-    L2L04:
-      mgmt-ipv4: 192.168.0.204
-      binds:
-        - sn/L2L04.txt:/mnt/flash/ceos-config:ro
-    L2L05:
-      mgmt-ipv4: 192.168.0.205
-      binds:
-        - sn/L2L05.txt:/mnt/flash/ceos-config:ro
-    L2L06:
-      mgmt-ipv4: 192.168.0.206
-      binds:
-        - sn/L2L06.txt:/mnt/flash/ceos-config:ro
-    L2L07:
-      mgmt-ipv4: 192.168.0.207
-      binds:
-        - sn/L2L07.txt:/mnt/flash/ceos-config:ro
-    L2L08:
-      mgmt-ipv4: 192.168.0.208
-      binds:
-        - sn/L2L08.txt:/mnt/flash/ceos-config:ro
-    L2L09:
-      mgmt-ipv4: 192.168.0.209
-      binds:
-        - sn/L2L09.txt:/mnt/flash/ceos-config:ro
     L2L10:
       mgmt-ipv4: 192.168.0.210
       binds:
         - sn/L2L10.txt:/mnt/flash/ceos-config:ro
-    L2L11:
-      mgmt-ipv4: 192.168.0.211
-      binds:
-        - sn/L2L11.txt:/mnt/flash/ceos-config:ro
-    L2L12:
-      mgmt-ipv4: 192.168.0.212
-      binds:
-        - sn/L2L12.txt:/mnt/flash/ceos-config:ro
-    L2L13:
-      mgmt-ipv4: 192.168.0.213
-      binds:
-        - sn/L2L13.txt:/mnt/flash/ceos-config:ro
-    L2L14:
-      mgmt-ipv4: 192.168.0.214
-      binds:
-        - sn/L2L14.txt:/mnt/flash/ceos-config:ro
-    L2L15:
-      mgmt-ipv4: 192.168.0.215
-      binds:
-        - sn/L2L15.txt:/mnt/flash/ceos-config:ro
-    L2L16:
-      mgmt-ipv4: 192.168.0.216
-      binds:
-        - sn/L2L16.txt:/mnt/flash/ceos-config:ro
-    L2L17:
-      mgmt-ipv4: 192.168.0.217
-      binds:
-        - sn/L2L17.txt:/mnt/flash/ceos-config:ro
-    L2L18:
-      mgmt-ipv4: 192.168.0.218
-      binds:
-        - sn/L2L18.txt:/mnt/flash/ceos-config:ro
-    L2L19:
-      mgmt-ipv4: 192.168.0.219
-      binds:
-        - sn/L2L19.txt:/mnt/flash/ceos-config:ro
-    L2L20:
-      mgmt-ipv4: 192.168.0.220
-      binds:
-        - sn/L2L20.txt:/mnt/flash/ceos-config:ro
     a_host:
       mgmt-ipv4: 192.168.0.254
       startup-config: init-configs/a_host.cfg
@@ -304,61 +232,7 @@ topology:
   - endpoints: ["L19:eth32", "L20:eth32"]
   - endpoints: ["L2L01:eth11", "L01:eth11"]
   - endpoints: ["L2L01:eth12", "L02:eth11"]
-  - endpoints: ["L2L02:eth11", "L01:eth12"]
-  - endpoints: ["L2L02:eth12", "L02:eth12"]
-  - endpoints: ["L2L03:eth11", "L03:eth11"]
-  - endpoints: ["L2L03:eth12", "L04:eth11"]
-  - endpoints: ["L2L04:eth11", "L03:eth12"]
-  - endpoints: ["L2L04:eth12", "L04:eth12"]
-  - endpoints: ["L2L05:eth11", "L05:eth11"]
-  - endpoints: ["L2L05:eth12", "L06:eth11"]
-  - endpoints: ["L2L06:eth11", "L05:eth12"]
-  - endpoints: ["L2L06:eth12", "L06:eth12"]
-  - endpoints: ["L2L07:eth11", "L07:eth11"]
-  - endpoints: ["L2L07:eth12", "L08:eth11"]
-  - endpoints: ["L2L08:eth11", "L07:eth12"]
-  - endpoints: ["L2L08:eth12", "L08:eth12"]
-  - endpoints: ["L2L09:eth11", "L09:eth11"]
-  - endpoints: ["L2L09:eth12", "L10:eth11"]
-  - endpoints: ["L2L10:eth11", "L09:eth12"]
-  - endpoints: ["L2L10:eth12", "L10:eth12"]
-  - endpoints: ["L2L11:eth11", "L11:eth11"]
-  - endpoints: ["L2L11:eth12", "L12:eth11"]
-  - endpoints: ["L2L12:eth11", "L11:eth12"]
-  - endpoints: ["L2L12:eth12", "L12:eth12"]
-  - endpoints: ["L2L13:eth11", "L13:eth11"]
-  - endpoints: ["L2L13:eth12", "L14:eth11"]
-  - endpoints: ["L2L14:eth11", "L13:eth12"]
-  - endpoints: ["L2L14:eth12", "L14:eth12"]
-  - endpoints: ["L2L15:eth11", "L15:eth11"]
-  - endpoints: ["L2L15:eth12", "L16:eth11"]
-  - endpoints: ["L2L16:eth11", "L15:eth12"]
-  - endpoints: ["L2L16:eth12", "L16:eth12"]
-  - endpoints: ["L2L17:eth11", "L17:eth11"]
-  - endpoints: ["L2L17:eth12", "L18:eth11"]
-  - endpoints: ["L2L18:eth11", "L17:eth12"]
-  - endpoints: ["L2L18:eth12", "L18:eth12"]
-  - endpoints: ["L2L19:eth11", "L19:eth11"]
-  - endpoints: ["L2L19:eth12", "L20:eth11"]
   - endpoints: ["L2L20:eth11", "L19:eth12"]
   - endpoints: ["L2L20:eth12", "L20:eth12"]
   - endpoints: ["a_host:eth1", "L2L01:eth1"]
-  - endpoints: ["a_host:eth2", "L2L02:eth1"]
-  - endpoints: ["a_host:eth3", "L2L03:eth1"]
-  - endpoints: ["a_host:eth4", "L2L04:eth1"]
-  - endpoints: ["a_host:eth5", "L2L05:eth1"]
-  - endpoints: ["a_host:eth6", "L2L06:eth1"]
-  - endpoints: ["a_host:eth7", "L2L07:eth1"]
-  - endpoints: ["a_host:eth8", "L2L08:eth1"]
-  - endpoints: ["a_host:eth9", "L2L09:eth1"]
-  - endpoints: ["a_host:eth10", "L2L10:eth1"]
-  - endpoints: ["a_host:eth11", "L2L11:eth1"]
-  - endpoints: ["a_host:eth12", "L2L12:eth1"]
-  - endpoints: ["a_host:eth13", "L2L13:eth1"]
-  - endpoints: ["a_host:eth14", "L2L14:eth1"]
-  - endpoints: ["a_host:eth15", "L2L15:eth1"]
-  - endpoints: ["a_host:eth16", "L2L16:eth1"]
-  - endpoints: ["a_host:eth17", "L2L17:eth1"]
-  - endpoints: ["a_host:eth18", "L2L18:eth1"]
-  - endpoints: ["a_host:eth19", "L2L19:eth1"]
   - endpoints: ["a_host:eth20", "L2L20:eth1"]

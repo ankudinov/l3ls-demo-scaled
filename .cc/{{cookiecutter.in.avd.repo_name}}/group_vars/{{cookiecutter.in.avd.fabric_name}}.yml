@@ -32,9 +32,9 @@ spine:
 l3leaf:
   defaults:
     platform: cEOS
-    loopback_ipv4_pool: 192.0.255.0/24
+    loopback_ipv4_pool: 192.0.254.0/24
     loopback_ipv4_offset: 2
-    vtep_loopback_ipv4_pool: 192.0.254.0/24
+    vtep_loopback_ipv4_pool: 192.0.253.0/24
     uplink_interfaces: {{ cookiecutter.in.fabric_leaf_inventory.0.uplink_interfaces }}
     uplink_switches: {{ cookiecutter.in.fabric_leaf_inventory.0.uplink_switches }}
     uplink_ipv4_pool: 172.30.255.0/24

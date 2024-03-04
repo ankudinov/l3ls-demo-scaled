@@ -106,7 +106,6 @@
                 "mlag_interfaces": [
                     "Ethernet31",
                     "Ethernet32",
-                    "Ethernet11",
                     "Ethernet11"
                 ]
             },
@@ -137,7 +136,6 @@
                 "mlag_interfaces": [
                     "Ethernet31",
                     "Ethernet32",
-                    "Ethernet12",
                     "Ethernet12"
                 ]
             },
@@ -167,9 +165,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet11",
-                    "Ethernet11"
+                    "Ethernet32"
                 ]
             },
             {
@@ -198,9 +194,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet12",
-                    "Ethernet12"
+                    "Ethernet32"
                 ]
             },
             {
@@ -229,9 +223,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet11",
-                    "Ethernet11"
+                    "Ethernet32"
                 ]
             },
             {
@@ -260,9 +252,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet12",
-                    "Ethernet12"
+                    "Ethernet32"
                 ]
             },
             {
@@ -291,9 +281,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet11",
-                    "Ethernet11"
+                    "Ethernet32"
                 ]
             },
             {
@@ -322,9 +310,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet12",
-                    "Ethernet12"
+                    "Ethernet32"
                 ]
             },
             {
@@ -353,9 +339,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet11",
-                    "Ethernet11"
+                    "Ethernet32"
                 ]
             },
             {
@@ -384,9 +368,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet12",
-                    "Ethernet12"
+                    "Ethernet32"
                 ]
             },
             {
@@ -415,9 +397,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet11",
-                    "Ethernet11"
+                    "Ethernet32"
                 ]
             },
             {
@@ -446,9 +426,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet12",
-                    "Ethernet12"
+                    "Ethernet32"
                 ]
             },
             {
@@ -477,9 +455,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet11",
-                    "Ethernet11"
+                    "Ethernet32"
                 ]
             },
             {
@@ -508,9 +484,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet12",
-                    "Ethernet12"
+                    "Ethernet32"
                 ]
             },
             {
@@ -539,9 +513,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet11",
-                    "Ethernet11"
+                    "Ethernet32"
                 ]
             },
             {
@@ -570,9 +542,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet12",
-                    "Ethernet12"
+                    "Ethernet32"
                 ]
             },
             {
@@ -601,9 +571,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet11",
-                    "Ethernet11"
+                    "Ethernet32"
                 ]
             },
             {
@@ -632,9 +600,7 @@
                 ],
                 "mlag_interfaces": [
                     "Ethernet31",
-                    "Ethernet32",
-                    "Ethernet12",
-                    "Ethernet12"
+                    "Ethernet32"
                 ]
             },
             {
@@ -664,7 +630,6 @@
                 "mlag_interfaces": [
                     "Ethernet31",
                     "Ethernet32",
-                    "Ethernet11",
                     "Ethernet11"
                 ]
             },
@@ -695,7 +660,6 @@
                 "mlag_interfaces": [
                     "Ethernet31",
                     "Ethernet32",
-                    "Ethernet12",
                     "Ethernet12"
                 ]
             }
@@ -708,117 +672,9 @@
                 "platform": "cEOS"
             },
             {
-                "id": "2",
-                "hostname": "L2L02",
-                "management_ip": "192.168.0.202/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "3",
-                "hostname": "L2L03",
-                "management_ip": "192.168.0.203/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "4",
-                "hostname": "L2L04",
-                "management_ip": "192.168.0.204/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "5",
-                "hostname": "L2L05",
-                "management_ip": "192.168.0.205/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "6",
-                "hostname": "L2L06",
-                "management_ip": "192.168.0.206/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "7",
-                "hostname": "L2L07",
-                "management_ip": "192.168.0.207/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "8",
-                "hostname": "L2L08",
-                "management_ip": "192.168.0.208/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "9",
-                "hostname": "L2L09",
-                "management_ip": "192.168.0.209/24",
-                "platform": "cEOS"
-            },
-            {
                 "id": "10",
                 "hostname": "L2L10",
                 "management_ip": "192.168.0.210/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "11",
-                "hostname": "L2L11",
-                "management_ip": "192.168.0.211/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "12",
-                "hostname": "L2L12",
-                "management_ip": "192.168.0.212/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "13",
-                "hostname": "L2L13",
-                "management_ip": "192.168.0.213/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "14",
-                "hostname": "L2L14",
-                "management_ip": "192.168.0.214/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "15",
-                "hostname": "L2L15",
-                "management_ip": "192.168.0.215/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "16",
-                "hostname": "L2L16",
-                "management_ip": "192.168.0.216/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "17",
-                "hostname": "L2L17",
-                "management_ip": "192.168.0.217/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "18",
-                "hostname": "L2L18",
-                "management_ip": "192.168.0.218/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "19",
-                "hostname": "L2L19",
-                "management_ip": "192.168.0.219/24",
-                "platform": "cEOS"
-            },
-            {
-                "id": "20",
-                "hostname": "L2L20",
-                "management_ip": "192.168.0.220/24",
                 "platform": "cEOS"
             }
         ],
@@ -1467,222 +1323,6 @@
                 "remote_interface": "e11"
             },
             {
-                "local_switch": "L2L02",
-                "local_interface": "e11",
-                "remote_switch": "L01",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L02",
-                "local_interface": "e12",
-                "remote_switch": "L02",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L03",
-                "local_interface": "e11",
-                "remote_switch": "L03",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L03",
-                "local_interface": "e12",
-                "remote_switch": "L04",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L04",
-                "local_interface": "e11",
-                "remote_switch": "L03",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L04",
-                "local_interface": "e12",
-                "remote_switch": "L04",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L05",
-                "local_interface": "e11",
-                "remote_switch": "L05",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L05",
-                "local_interface": "e12",
-                "remote_switch": "L06",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L06",
-                "local_interface": "e11",
-                "remote_switch": "L05",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L06",
-                "local_interface": "e12",
-                "remote_switch": "L06",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L07",
-                "local_interface": "e11",
-                "remote_switch": "L07",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L07",
-                "local_interface": "e12",
-                "remote_switch": "L08",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L08",
-                "local_interface": "e11",
-                "remote_switch": "L07",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L08",
-                "local_interface": "e12",
-                "remote_switch": "L08",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L09",
-                "local_interface": "e11",
-                "remote_switch": "L09",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L09",
-                "local_interface": "e12",
-                "remote_switch": "L10",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L10",
-                "local_interface": "e11",
-                "remote_switch": "L09",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L10",
-                "local_interface": "e12",
-                "remote_switch": "L10",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L11",
-                "local_interface": "e11",
-                "remote_switch": "L11",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L11",
-                "local_interface": "e12",
-                "remote_switch": "L12",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L12",
-                "local_interface": "e11",
-                "remote_switch": "L11",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L12",
-                "local_interface": "e12",
-                "remote_switch": "L12",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L13",
-                "local_interface": "e11",
-                "remote_switch": "L13",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L13",
-                "local_interface": "e12",
-                "remote_switch": "L14",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L14",
-                "local_interface": "e11",
-                "remote_switch": "L13",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L14",
-                "local_interface": "e12",
-                "remote_switch": "L14",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L15",
-                "local_interface": "e11",
-                "remote_switch": "L15",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L15",
-                "local_interface": "e12",
-                "remote_switch": "L16",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L16",
-                "local_interface": "e11",
-                "remote_switch": "L15",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L16",
-                "local_interface": "e12",
-                "remote_switch": "L16",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L17",
-                "local_interface": "e11",
-                "remote_switch": "L17",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L17",
-                "local_interface": "e12",
-                "remote_switch": "L18",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L18",
-                "local_interface": "e11",
-                "remote_switch": "L17",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L18",
-                "local_interface": "e12",
-                "remote_switch": "L18",
-                "remote_interface": "e12"
-            },
-            {
-                "local_switch": "L2L19",
-                "local_interface": "e11",
-                "remote_switch": "L19",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L19",
-                "local_interface": "e12",
-                "remote_switch": "L20",
-                "remote_interface": "e11"
-            },
-            {
                 "local_switch": "L2L20",
                 "local_interface": "e11",
                 "remote_switch": "L19",
@@ -1698,114 +1338,6 @@
                 "local_switch": "a_host",
                 "local_interface": "e1",
                 "remote_switch": "L2L01",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e2",
-                "remote_switch": "L2L02",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e3",
-                "remote_switch": "L2L03",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e4",
-                "remote_switch": "L2L04",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e5",
-                "remote_switch": "L2L05",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e6",
-                "remote_switch": "L2L06",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e7",
-                "remote_switch": "L2L07",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e8",
-                "remote_switch": "L2L08",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e9",
-                "remote_switch": "L2L09",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e10",
-                "remote_switch": "L2L10",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e11",
-                "remote_switch": "L2L11",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e12",
-                "remote_switch": "L2L12",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e13",
-                "remote_switch": "L2L13",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e14",
-                "remote_switch": "L2L14",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e15",
-                "remote_switch": "L2L15",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e16",
-                "remote_switch": "L2L16",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e17",
-                "remote_switch": "L2L17",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e18",
-                "remote_switch": "L2L18",
-                "remote_interface": "e1"
-            },
-            {
-                "local_switch": "a_host",
-                "local_interface": "e19",
-                "remote_switch": "L2L19",
                 "remote_interface": "e1"
             },
             {

@@ -1,8 +1,5 @@
 tenants:
-- l2vlans:
-  - id: 200
-    name: TA_VLAN200
-  mac_vrf_vni_base: 10000
+- mac_vrf_vni_base: 10000
   name: TENANT_A
   vrfs:
   - name: TEST_VRF
@@ -12,9 +9,9 @@ tenants:
       ip_address_virtual: 10.100.100.1/24
       name: TA_VLAN100
     - enabled: true
-      id: 150
-      ip_address_virtual: 10.100.150.1/24
-      name: TA_VLAN150
+      id: 200
+      ip_address_virtual: 10.100.200.1/24
+      name: TA_VLAN200
     vrf_vni: 10
     vtep_diagnostic:
       loopback: '100'

@@ -12,40 +12,22 @@
         ],
         "fabric_endpoints": [
             {
-                "server_name": "test-server",
-                "switch_hostname": "L01",
+                "server_name": "a_host_01",
+                "switch_hostname": "L2L01",
                 "switch_port": "Ethernet1",
-                "description": "trunk-to-test-server",
-                "port_channel_mode": "active",
+                "description": "trunk-to-host",
+                "port_channel_mode": "",
                 "switchport_mode": "trunk",
-                "switchport_vlans": "10-20,100"
+                "switchport_vlans": "100,200"
             },
             {
-                "server_name": "test-server",
-                "switch_hostname": "L02",
+                "server_name": "a_host_20",
+                "switch_hostname": "L2L20",
                 "switch_port": "Ethernet1",
-                "description": "trunk-to-test-server",
-                "port_channel_mode": "active",
+                "description": "trunk-to-host",
+                "port_channel_mode": "",
                 "switchport_mode": "trunk",
-                "switchport_vlans": "10-20,100"
-            },
-            {
-                "server_name": "test-server-2",
-                "switch_hostname": "L03",
-                "switch_port": "Ethernet1",
-                "description": "trunk-to-test-server",
-                "port_channel_mode": "on",
-                "switchport_mode": "access",
-                "switchport_vlans": "10"
-            },
-            {
-                "server_name": "test-server-2",
-                "switch_hostname": "L04",
-                "switch_port": "Ethernet1",
-                "description": "trunk-to-test-server",
-                "port_channel_mode": "on",
-                "switchport_mode": "access",
-                "switchport_vlans": "10"
+                "switchport_vlans": "100,200"
             }
         ],
         "fabric_spine_inventory": [
@@ -688,25 +670,15 @@
                 "tenant_name": "TENANT_A",
                 "vlan_number": "100",
                 "vlan_name": "TA_VLAN100",
-                "filter_tags": "L01,L02",
                 "ip_vrf": "TEST_VRF",
                 "ip_virtual_address_and_mask": "10.100.100.1/24"
             },
             {
                 "tenant_name": "TENANT_A",
-                "vlan_number": "150",
-                "vlan_name": "TA_VLAN150",
-                "filter_tags": "L03,L04",
-                "ip_vrf": "TEST_VRF",
-                "ip_virtual_address_and_mask": "10.100.150.1/24"
-            },
-            {
-                "tenant_name": "TENANT_A",
                 "vlan_number": "200",
                 "vlan_name": "TA_VLAN200",
-                "filter_tags": "l2_only",
-                "ip_vrf": "",
-                "ip_virtual_address_and_mask": ""
+                "ip_vrf": "TEST_VRF",
+                "ip_virtual_address_and_mask": "10.100.200.1/24"
             }
         ],
         "fabric_cabling_plan": [
@@ -1363,9 +1335,9 @@
                             },
                             {
                                 "enabled": true,
-                                "id": 150,
-                                "name": "TA_VLAN150",
-                                "ip_address_virtual": "10.100.150.1/24"
+                                "id": 200,
+                                "name": "TA_VLAN200",
+                                "ip_address_virtual": "10.100.200.1/24"
                             }
                         ],
                         "name": "TEST_VRF",
@@ -1376,56 +1348,41 @@
                         }
                     }
                 ],
-                "l2vlans": [
-                    {
-                        "id": 200,
-                        "name": "TA_VLAN200"
-                    }
-                ],
+                "l2vlans": [],
                 "mac_vrf_vni_base": 10000
             }
         ],
         "endpoints": {
             "fabric_endpoints": [
                 {
-                    "name": "test-server",
+                    "name": "a_host_01",
                     "adapters": [
                         {
                             "switch_ports": [
-                                "Ethernet1",
                                 "Ethernet1"
                             ],
                             "switches": [
-                                "L01",
-                                "L02"
+                                "L2L01"
                             ],
-                            "port_channel": {
-                                "mode": "active"
-                            },
                             "mode": "trunk",
-                            "vlans": "10-20,100",
-                            "description": "trunk-to-test-server"
+                            "vlans": "100,200",
+                            "description": "trunk-to-host"
                         }
                     ]
                 },
                 {
-                    "name": "test-server-2",
+                    "name": "a_host_20",
                     "adapters": [
                         {
                             "switch_ports": [
-                                "Ethernet1",
                                 "Ethernet1"
                             ],
                             "switches": [
-                                "L03",
-                                "L04"
+                                "L2L20"
                             ],
-                            "port_channel": {
-                                "mode": "on"
-                            },
-                            "mode": "access",
-                            "vlans": "10",
-                            "description": "trunk-to-test-server"
+                            "mode": "trunk",
+                            "vlans": "100,200",
+                            "description": "trunk-to-host"
                         }
                     ]
                 }

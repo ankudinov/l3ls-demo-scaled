@@ -1,27 +1,19 @@
 fabric_endpoints:
 - adapters:
-  - description: trunk-to-test-server
+  - description: trunk-to-host
     mode: trunk
-    port_channel:
-      mode: active
     switch_ports:
     - Ethernet1
-    - Ethernet1
     switches:
-    - L01
-    - L02
-    vlans: 10-20,100
-  name: test-server
+    - L2L01
+    vlans: 100,200
+  name: a_host_01
 - adapters:
-  - description: trunk-to-test-server
-    mode: access
-    port_channel:
-      mode: 'on'
+  - description: trunk-to-host
+    mode: trunk
     switch_ports:
     - Ethernet1
-    - Ethernet1
     switches:
-    - L03
-    - L04
-    vlans: '10'
-  name: test-server-2
+    - L2L20
+    vlans: 100,200
+  name: a_host_20

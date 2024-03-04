@@ -14,9 +14,12 @@
     },
     "hostRequirements": {
         "cpus": 16,
-        "memory": "64gb",
+        "memory": "62gb",
         "storage": "128gb"
     },
+    "runArgs": [
+        "--network=host"
+    ],
     "postCreateCommand": "ardl get eos --image-type cEOS --version 4.30.3M  --import-docker",
     "customizations": {
         "vscode": {

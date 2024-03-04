@@ -3,7 +3,7 @@
         "dockerfile": "Dockerfile",
         "args": {
             "FROM_IMAGE": "ghcr.io/aristanetworks/avd/universal",
-            "FROM_VARIANT": "python3.11-avd-v4.6.0",
+            "FROM_VARIANT": "python3.11-avd-v4.5.0",
             "USERNAME": "avd",
             "CLAB_VERSION": "0.44.3",
             "CV_API_TOKEN": "${localEnv:CV_API_TOKEN}"

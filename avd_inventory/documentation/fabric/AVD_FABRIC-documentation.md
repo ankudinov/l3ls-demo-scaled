@@ -20,24 +20,6 @@
 | AVD_FABRIC | l3leaf | L01 | 192.168.0.101/24 | cEOS | Provisioned | - |
 | AVD_FABRIC | l3leaf | L02 | 192.168.0.102/24 | cEOS | Provisioned | - |
 | AVD_FABRIC | l2leaf | L2L01 | 192.168.0.201/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L02 | 192.168.0.202/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L03 | 192.168.0.203/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L04 | 192.168.0.204/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L05 | 192.168.0.205/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L06 | 192.168.0.206/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L07 | 192.168.0.207/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L08 | 192.168.0.208/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L09 | 192.168.0.209/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L10 | 192.168.0.210/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L11 | 192.168.0.211/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L12 | 192.168.0.212/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L13 | 192.168.0.213/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L14 | 192.168.0.214/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L15 | 192.168.0.215/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L16 | 192.168.0.216/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L17 | 192.168.0.217/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L18 | 192.168.0.218/24 | cEOS | Provisioned | - |
-| AVD_FABRIC | l2leaf | L2L19 | 192.168.0.219/24 | cEOS | Provisioned | - |
 | AVD_FABRIC | l2leaf | L2L20 | 192.168.0.220/24 | cEOS | Provisioned | - |
 | AVD_FABRIC | l3leaf | L03 | 192.168.0.103/24 | cEOS | Provisioned | - |
 | AVD_FABRIC | l3leaf | L04 | 192.168.0.104/24 | cEOS | Provisioned | - |
@@ -74,7 +56,6 @@
 | Type | Node | Node Interface | Peer Type | Peer Node | Peer Interface |
 | ---- | ---- | -------------- | --------- | ----------| -------------- |
 | l3leaf | L01 | Ethernet11 | l2leaf | L2L01 | Ethernet11 |
-| l3leaf | L01 | Ethernet12 | l2leaf | L2L02 | Ethernet11 |
 | l3leaf | L01 | Ethernet21 | spine | S01 | Ethernet1 |
 | l3leaf | L01 | Ethernet22 | spine | S02 | Ethernet1 |
 | l3leaf | L01 | Ethernet23 | spine | S03 | Ethernet1 |
@@ -82,45 +63,10 @@
 | l3leaf | L01 | Ethernet31 | mlag_peer | L02 | Ethernet31 |
 | l3leaf | L01 | Ethernet32 | mlag_peer | L02 | Ethernet32 |
 | l3leaf | L02 | Ethernet11 | l2leaf | L2L01 | Ethernet12 |
-| l3leaf | L02 | Ethernet12 | l2leaf | L2L02 | Ethernet12 |
 | l3leaf | L02 | Ethernet21 | spine | S01 | Ethernet2 |
 | l3leaf | L02 | Ethernet22 | spine | S02 | Ethernet2 |
 | l3leaf | L02 | Ethernet23 | spine | S03 | Ethernet2 |
 | l3leaf | L02 | Ethernet24 | spine | S04 | Ethernet2 |
-| l2leaf | L2L03 | Ethernet11 | l3leaf | L03 | Ethernet11 |
-| l2leaf | L2L03 | Ethernet12 | l3leaf | L04 | Ethernet11 |
-| l2leaf | L2L04 | Ethernet11 | l3leaf | L03 | Ethernet12 |
-| l2leaf | L2L04 | Ethernet12 | l3leaf | L04 | Ethernet12 |
-| l2leaf | L2L05 | Ethernet11 | l3leaf | L05 | Ethernet11 |
-| l2leaf | L2L05 | Ethernet12 | l3leaf | L06 | Ethernet11 |
-| l2leaf | L2L06 | Ethernet11 | l3leaf | L05 | Ethernet12 |
-| l2leaf | L2L06 | Ethernet12 | l3leaf | L06 | Ethernet12 |
-| l2leaf | L2L07 | Ethernet11 | l3leaf | L07 | Ethernet11 |
-| l2leaf | L2L07 | Ethernet12 | l3leaf | L08 | Ethernet11 |
-| l2leaf | L2L08 | Ethernet11 | l3leaf | L07 | Ethernet12 |
-| l2leaf | L2L08 | Ethernet12 | l3leaf | L08 | Ethernet12 |
-| l2leaf | L2L09 | Ethernet11 | l3leaf | L09 | Ethernet11 |
-| l2leaf | L2L09 | Ethernet12 | l3leaf | L10 | Ethernet11 |
-| l2leaf | L2L10 | Ethernet11 | l3leaf | L09 | Ethernet12 |
-| l2leaf | L2L10 | Ethernet12 | l3leaf | L10 | Ethernet12 |
-| l2leaf | L2L11 | Ethernet11 | l3leaf | L11 | Ethernet11 |
-| l2leaf | L2L11 | Ethernet12 | l3leaf | L12 | Ethernet11 |
-| l2leaf | L2L12 | Ethernet11 | l3leaf | L11 | Ethernet12 |
-| l2leaf | L2L12 | Ethernet12 | l3leaf | L12 | Ethernet12 |
-| l2leaf | L2L13 | Ethernet11 | l3leaf | L13 | Ethernet11 |
-| l2leaf | L2L13 | Ethernet12 | l3leaf | L14 | Ethernet11 |
-| l2leaf | L2L14 | Ethernet11 | l3leaf | L13 | Ethernet12 |
-| l2leaf | L2L14 | Ethernet12 | l3leaf | L14 | Ethernet12 |
-| l2leaf | L2L15 | Ethernet11 | l3leaf | L15 | Ethernet11 |
-| l2leaf | L2L15 | Ethernet12 | l3leaf | L16 | Ethernet11 |
-| l2leaf | L2L16 | Ethernet11 | l3leaf | L15 | Ethernet12 |
-| l2leaf | L2L16 | Ethernet12 | l3leaf | L16 | Ethernet12 |
-| l2leaf | L2L17 | Ethernet11 | l3leaf | L17 | Ethernet11 |
-| l2leaf | L2L17 | Ethernet12 | l3leaf | L18 | Ethernet11 |
-| l2leaf | L2L18 | Ethernet11 | l3leaf | L17 | Ethernet12 |
-| l2leaf | L2L18 | Ethernet12 | l3leaf | L18 | Ethernet12 |
-| l2leaf | L2L19 | Ethernet11 | l3leaf | L19 | Ethernet11 |
-| l2leaf | L2L19 | Ethernet12 | l3leaf | L20 | Ethernet11 |
 | l2leaf | L2L20 | Ethernet11 | l3leaf | L19 | Ethernet12 |
 | l2leaf | L2L20 | Ethernet12 | l3leaf | L20 | Ethernet12 |
 | l3leaf | L03 | Ethernet21 | spine | S01 | Ethernet3 |
@@ -311,32 +257,33 @@
 
 | Loopback Pool | Available Addresses | Assigned addresses | Assigned Address % |
 | ------------- | ------------------- | ------------------ | ------------------ |
-| 192.0.255.0/24 | 256 | 24 | 9.38 % |
+| 192.0.254.0/24 | 256 | 20 | 7.82 % |
+| 192.0.255.0/24 | 256 | 4 | 1.57 % |
 
 ### Loopback0 Interfaces Node Allocation
 
 | POD | Node | Loopback0 |
 | --- | ---- | --------- |
-| AVD_FABRIC | L01 | 192.0.255.3/32 |
-| AVD_FABRIC | L02 | 192.0.255.4/32 |
-| AVD_FABRIC | L03 | 192.0.255.5/32 |
-| AVD_FABRIC | L04 | 192.0.255.6/32 |
-| AVD_FABRIC | L05 | 192.0.255.7/32 |
-| AVD_FABRIC | L06 | 192.0.255.8/32 |
-| AVD_FABRIC | L07 | 192.0.255.9/32 |
-| AVD_FABRIC | L08 | 192.0.255.10/32 |
-| AVD_FABRIC | L09 | 192.0.255.11/32 |
-| AVD_FABRIC | L10 | 192.0.255.12/32 |
-| AVD_FABRIC | L11 | 192.0.255.13/32 |
-| AVD_FABRIC | L12 | 192.0.255.14/32 |
-| AVD_FABRIC | L13 | 192.0.255.15/32 |
-| AVD_FABRIC | L14 | 192.0.255.16/32 |
-| AVD_FABRIC | L15 | 192.0.255.17/32 |
-| AVD_FABRIC | L16 | 192.0.255.18/32 |
-| AVD_FABRIC | L17 | 192.0.255.19/32 |
-| AVD_FABRIC | L18 | 192.0.255.20/32 |
-| AVD_FABRIC | L19 | 192.0.255.21/32 |
-| AVD_FABRIC | L20 | 192.0.255.22/32 |
+| AVD_FABRIC | L01 | 192.0.254.3/32 |
+| AVD_FABRIC | L02 | 192.0.254.4/32 |
+| AVD_FABRIC | L03 | 192.0.254.5/32 |
+| AVD_FABRIC | L04 | 192.0.254.6/32 |
+| AVD_FABRIC | L05 | 192.0.254.7/32 |
+| AVD_FABRIC | L06 | 192.0.254.8/32 |
+| AVD_FABRIC | L07 | 192.0.254.9/32 |
+| AVD_FABRIC | L08 | 192.0.254.10/32 |
+| AVD_FABRIC | L09 | 192.0.254.11/32 |
+| AVD_FABRIC | L10 | 192.0.254.12/32 |
+| AVD_FABRIC | L11 | 192.0.254.13/32 |
+| AVD_FABRIC | L12 | 192.0.254.14/32 |
+| AVD_FABRIC | L13 | 192.0.254.15/32 |
+| AVD_FABRIC | L14 | 192.0.254.16/32 |
+| AVD_FABRIC | L15 | 192.0.254.17/32 |
+| AVD_FABRIC | L16 | 192.0.254.18/32 |
+| AVD_FABRIC | L17 | 192.0.254.19/32 |
+| AVD_FABRIC | L18 | 192.0.254.20/32 |
+| AVD_FABRIC | L19 | 192.0.254.21/32 |
+| AVD_FABRIC | L20 | 192.0.254.22/32 |
 | AVD_FABRIC | S01 | 192.0.255.1/32 |
 | AVD_FABRIC | S02 | 192.0.255.2/32 |
 | AVD_FABRIC | S03 | 192.0.255.3/32 |
@@ -346,29 +293,29 @@
 
 | VTEP Loopback Pool | Available Addresses | Assigned addresses | Assigned Address % |
 | --------------------- | ------------------- | ------------------ | ------------------ |
-| 192.0.254.0/24 | 256 | 20 | 7.82 % |
+| 192.0.253.0/24 | 256 | 20 | 7.82 % |
 
 ### VTEP Loopback Node allocation
 
 | POD | Node | Loopback1 |
 | --- | ---- | --------- |
-| AVD_FABRIC | L01 | 192.0.254.3/32 |
-| AVD_FABRIC | L02 | 192.0.254.3/32 |
-| AVD_FABRIC | L03 | 192.0.254.5/32 |
-| AVD_FABRIC | L04 | 192.0.254.5/32 |
-| AVD_FABRIC | L05 | 192.0.254.7/32 |
-| AVD_FABRIC | L06 | 192.0.254.7/32 |
-| AVD_FABRIC | L07 | 192.0.254.9/32 |
-| AVD_FABRIC | L08 | 192.0.254.9/32 |
-| AVD_FABRIC | L09 | 192.0.254.11/32 |
-| AVD_FABRIC | L10 | 192.0.254.11/32 |
-| AVD_FABRIC | L11 | 192.0.254.13/32 |
-| AVD_FABRIC | L12 | 192.0.254.13/32 |
-| AVD_FABRIC | L13 | 192.0.254.15/32 |
-| AVD_FABRIC | L14 | 192.0.254.15/32 |
-| AVD_FABRIC | L15 | 192.0.254.17/32 |
-| AVD_FABRIC | L16 | 192.0.254.17/32 |
-| AVD_FABRIC | L17 | 192.0.254.19/32 |
-| AVD_FABRIC | L18 | 192.0.254.19/32 |
-| AVD_FABRIC | L19 | 192.0.254.21/32 |
-| AVD_FABRIC | L20 | 192.0.254.21/32 |
+| AVD_FABRIC | L01 | 192.0.253.3/32 |
+| AVD_FABRIC | L02 | 192.0.253.3/32 |
+| AVD_FABRIC | L03 | 192.0.253.5/32 |
+| AVD_FABRIC | L04 | 192.0.253.5/32 |
+| AVD_FABRIC | L05 | 192.0.253.7/32 |
+| AVD_FABRIC | L06 | 192.0.253.7/32 |
+| AVD_FABRIC | L07 | 192.0.253.9/32 |
+| AVD_FABRIC | L08 | 192.0.253.9/32 |
+| AVD_FABRIC | L09 | 192.0.253.11/32 |
+| AVD_FABRIC | L10 | 192.0.253.11/32 |
+| AVD_FABRIC | L11 | 192.0.253.13/32 |
+| AVD_FABRIC | L12 | 192.0.253.13/32 |
+| AVD_FABRIC | L13 | 192.0.253.15/32 |
+| AVD_FABRIC | L14 | 192.0.253.15/32 |
+| AVD_FABRIC | L15 | 192.0.253.17/32 |
+| AVD_FABRIC | L16 | 192.0.253.17/32 |
+| AVD_FABRIC | L17 | 192.0.253.19/32 |
+| AVD_FABRIC | L18 | 192.0.253.19/32 |
+| AVD_FABRIC | L19 | 192.0.253.21/32 |
+| AVD_FABRIC | L20 | 192.0.253.21/32 |

@@ -231,7 +231,7 @@
                     "Ethernet31",
                     "Ethernet32",
                     "Ethernet11",
-                    "Ethernet12"
+                    "Ethernet11"
                 ]
             },
             {
@@ -261,7 +261,7 @@
                 "mlag_interfaces": [
                     "Ethernet31",
                     "Ethernet32",
-                    "Ethernet11",
+                    "Ethernet12",
                     "Ethernet12"
                 ]
             },
@@ -293,7 +293,7 @@
                     "Ethernet31",
                     "Ethernet32",
                     "Ethernet11",
-                    "Ethernet12"
+                    "Ethernet11"
                 ]
             },
             {
@@ -323,7 +323,7 @@
                 "mlag_interfaces": [
                     "Ethernet31",
                     "Ethernet32",
-                    "Ethernet11",
+                    "Ethernet12",
                     "Ethernet12"
                 ]
             },
@@ -355,7 +355,7 @@
                     "Ethernet31",
                     "Ethernet32",
                     "Ethernet11",
-                    "Ethernet12"
+                    "Ethernet11"
                 ]
             },
             {
@@ -385,7 +385,7 @@
                 "mlag_interfaces": [
                     "Ethernet31",
                     "Ethernet32",
-                    "Ethernet11",
+                    "Ethernet12",
                     "Ethernet12"
                 ]
             },
@@ -417,7 +417,7 @@
                     "Ethernet31",
                     "Ethernet32",
                     "Ethernet11",
-                    "Ethernet12"
+                    "Ethernet11"
                 ]
             },
             {
@@ -447,7 +447,7 @@
                 "mlag_interfaces": [
                     "Ethernet31",
                     "Ethernet32",
-                    "Ethernet11",
+                    "Ethernet12",
                     "Ethernet12"
                 ]
             },
@@ -479,7 +479,7 @@
                     "Ethernet31",
                     "Ethernet32",
                     "Ethernet11",
-                    "Ethernet12"
+                    "Ethernet11"
                 ]
             },
             {
@@ -509,7 +509,7 @@
                 "mlag_interfaces": [
                     "Ethernet31",
                     "Ethernet32",
-                    "Ethernet11",
+                    "Ethernet12",
                     "Ethernet12"
                 ]
             },
@@ -541,7 +541,7 @@
                     "Ethernet31",
                     "Ethernet32",
                     "Ethernet11",
-                    "Ethernet12"
+                    "Ethernet11"
                 ]
             },
             {
@@ -571,7 +571,7 @@
                 "mlag_interfaces": [
                     "Ethernet31",
                     "Ethernet32",
-                    "Ethernet11",
+                    "Ethernet12",
                     "Ethernet12"
                 ]
             },
@@ -603,7 +603,7 @@
                     "Ethernet31",
                     "Ethernet32",
                     "Ethernet11",
-                    "Ethernet12"
+                    "Ethernet11"
                 ]
             },
             {
@@ -633,7 +633,7 @@
                 "mlag_interfaces": [
                     "Ethernet31",
                     "Ethernet32",
-                    "Ethernet11",
+                    "Ethernet12",
                     "Ethernet12"
                 ]
             },
@@ -665,7 +665,7 @@
                     "Ethernet31",
                     "Ethernet32",
                     "Ethernet11",
-                    "Ethernet12"
+                    "Ethernet11"
                 ]
             },
             {
@@ -695,7 +695,7 @@
                 "mlag_interfaces": [
                     "Ethernet31",
                     "Ethernet32",
-                    "Ethernet11",
+                    "Ethernet12",
                     "Ethernet12"
                 ]
             }
@@ -1511,13 +1511,13 @@
             {
                 "local_switch": "L2L05",
                 "local_interface": "e12",
+                "remote_switch": "L06",
+                "remote_interface": "e11"
+            },
+            {
+                "local_switch": "L2L06",
+                "local_interface": "e11",
                 "remote_switch": "L05",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L06",
-                "local_interface": "e11",
-                "remote_switch": "L06",
                 "remote_interface": "e12"
             },
             {
@@ -1535,13 +1535,13 @@
             {
                 "local_switch": "L2L07",
                 "local_interface": "e12",
+                "remote_switch": "L08",
+                "remote_interface": "e11"
+            },
+            {
+                "local_switch": "L2L08",
+                "local_interface": "e11",
                 "remote_switch": "L07",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L08",
-                "local_interface": "e11",
-                "remote_switch": "L08",
                 "remote_interface": "e12"
             },
             {
@@ -1559,13 +1559,13 @@
             {
                 "local_switch": "L2L09",
                 "local_interface": "e12",
+                "remote_switch": "L10",
+                "remote_interface": "e11"
+            },
+            {
+                "local_switch": "L2L10",
+                "local_interface": "e11",
                 "remote_switch": "L09",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L10",
-                "local_interface": "e11",
-                "remote_switch": "L10",
                 "remote_interface": "e12"
             },
             {
@@ -1583,13 +1583,13 @@
             {
                 "local_switch": "L2L11",
                 "local_interface": "e12",
+                "remote_switch": "L12",
+                "remote_interface": "e11"
+            },
+            {
+                "local_switch": "L2L12",
+                "local_interface": "e11",
                 "remote_switch": "L11",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L12",
-                "local_interface": "e11",
-                "remote_switch": "L12",
                 "remote_interface": "e12"
             },
             {
@@ -1607,13 +1607,13 @@
             {
                 "local_switch": "L2L13",
                 "local_interface": "e12",
+                "remote_switch": "L14",
+                "remote_interface": "e11"
+            },
+            {
+                "local_switch": "L2L14",
+                "local_interface": "e11",
                 "remote_switch": "L13",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L14",
-                "local_interface": "e11",
-                "remote_switch": "L14",
                 "remote_interface": "e12"
             },
             {
@@ -1631,13 +1631,13 @@
             {
                 "local_switch": "L2L15",
                 "local_interface": "e12",
+                "remote_switch": "L16",
+                "remote_interface": "e11"
+            },
+            {
+                "local_switch": "L2L16",
+                "local_interface": "e11",
                 "remote_switch": "L15",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L16",
-                "local_interface": "e11",
-                "remote_switch": "L16",
                 "remote_interface": "e12"
             },
             {
@@ -1655,13 +1655,13 @@
             {
                 "local_switch": "L2L17",
                 "local_interface": "e12",
+                "remote_switch": "L18",
+                "remote_interface": "e11"
+            },
+            {
+                "local_switch": "L2L18",
+                "local_interface": "e11",
                 "remote_switch": "L17",
-                "remote_interface": "e11"
-            },
-            {
-                "local_switch": "L2L18",
-                "local_interface": "e11",
-                "remote_switch": "L18",
                 "remote_interface": "e12"
             },
             {
@@ -1679,13 +1679,13 @@
             {
                 "local_switch": "L2L19",
                 "local_interface": "e12",
-                "remote_switch": "L19",
+                "remote_switch": "L20",
                 "remote_interface": "e11"
             },
             {
                 "local_switch": "L2L20",
                 "local_interface": "e11",
-                "remote_switch": "L20",
+                "remote_switch": "L19",
                 "remote_interface": "e12"
             },
             {

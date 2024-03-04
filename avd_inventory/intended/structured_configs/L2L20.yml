@@ -26,7 +26,7 @@ local_users:
 - name: avd
   privilege: 15
   role: network-admin
-  sha512_password: '{{ avd | password_hash(rounds=5000, salt=1) }}'
+  sha512_password: $6$1$ZcdGV9vISJtoDrQXmVr8QggiFoypyNwPA0XmIOsHX6JzNX6wvZIyH8IkbxijY0ppizgyFgM6Fa/mtvo3z7hZI/
 vrfs:
 - name: MGMT
   ip_routing: false
@@ -63,13 +63,28 @@ ethernet_interfaces:
   channel_group:
     id: 11
     mode: active
+- name: Ethernet1
+  peer: a_host_20
+  peer_type: server
+  description: trunk-to-host
+  shutdown: false
+  type: switched
+  mode: trunk
+  vlans: 100,200
 port_channel_interfaces:
 - name: Port-Channel11
   description: POD9_Po12
   type: switched
   shutdown: false
   mode: trunk
-  vlans: none
+  vlans: 100,200
+vlans:
+- id: 100
+  name: TA_VLAN100
+  tenant: TENANT_A
+- id: 200
+  name: TA_VLAN200
+  tenant: TENANT_A
 ip_igmp_snooping:
   globally_enabled: true
 metadata:

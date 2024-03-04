@@ -45,7 +45,9 @@ all:
     {{ cookiecutter.in.avd.fabric_name }}_ENDPOINTS:
       children:
         {{ cookiecutter.in.avd.fabric_name }}_LEAFS:
+        {{ cookiecutter.in.avd.fabric_name }}_L2LEAFS:
 
     {{ cookiecutter.in.avd.fabric_name }}_TENANTS:
       children:
         {{ cookiecutter.in.avd.fabric_name }}_LEAFS:
+        {{ cookiecutter.in.avd.fabric_name }}_L2LEAFS:

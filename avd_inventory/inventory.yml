@@ -100,7 +100,9 @@ all:
     AVD_FABRIC_ENDPOINTS:
       children:
         AVD_FABRIC_LEAFS:
+        AVD_FABRIC_L2LEAFS:
 
     AVD_FABRIC_TENANTS:
       children:
         AVD_FABRIC_LEAFS:
+        AVD_FABRIC_L2LEAFS:

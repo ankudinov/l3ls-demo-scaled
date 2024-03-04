@@ -116,14 +116,6 @@ router_bgp:
       - 10100:10100
     redistribute_routes:
     - learned
-  - id: 150
-    tenant: TENANT_A
-    rd: 192.0.254.5:10150
-    route_targets:
-      both:
-      - 10150:10150
-    redistribute_routes:
-    - learned
   - id: 200
     tenant: TENANT_A
     rd: 192.0.254.5:10200
@@ -160,7 +152,7 @@ local_users:
 - name: avd
   privilege: 15
   role: network-admin
-  sha512_password: '{{ avd | password_hash(rounds=5000, salt=1) }}'
+  sha512_password: $6$1$ZcdGV9vISJtoDrQXmVr8QggiFoypyNwPA0XmIOsHX6JzNX6wvZIyH8IkbxijY0ppizgyFgM6Fa/mtvo3z7hZI/
 vrfs:
 - name: MGMT
   ip_routing: false
@@ -193,16 +185,13 @@ vlans:
 - id: 100
   name: TA_VLAN100
   tenant: TENANT_A
-- id: 150
-  name: TA_VLAN150
+- id: 200
+  name: TA_VLAN200
   tenant: TENANT_A
 - id: 3009
   name: MLAG_iBGP_TEST_VRF
   trunk_groups:
   - LEAF_PEER_L3
-  tenant: TENANT_A
-- id: 200
-  name: TA_VLAN200
   tenant: TENANT_A
 vlan_interfaces:
 - name: Vlan4093
@@ -222,11 +211,11 @@ vlan_interfaces:
   shutdown: false
   ip_address_virtual: 10.100.100.1/24
   vrf: TEST_VRF
-- name: Vlan150
+- name: Vlan200
   tenant: TENANT_A
-  description: TA_VLAN150
+  description: TA_VLAN200
   shutdown: false
-  ip_address_virtual: 10.100.150.1/24
+  ip_address_virtual: 10.100.200.1/24
   vrf: TEST_VRF
 - name: Vlan3009
   tenant: TENANT_A
@@ -245,13 +234,6 @@ port_channel_interfaces:
   trunk_groups:
   - LEAF_PEER_L3
   - MLAG
-- name: Port-Channel1
-  description: trunk-to-test-server
-  type: switched
-  shutdown: false
-  mode: access
-  vlans: '10'
-  mlag: 1
 ethernet_interfaces:
 - name: Ethernet31
   peer: L04
@@ -309,15 +291,6 @@ ethernet_interfaces:
   mtu: 9214
   type: routed
   ip_address: 172.30.255.23/31
-- name: Ethernet1
-  peer: test-server-2
-  peer_type: server
-  description: trunk-to-test-server
-  shutdown: false
-  type: port-channel-member
-  channel_group:
-    id: 1
-    mode: 'on'
 mlag_configuration:
   domain_id: pod1
   local_interface: Vlan4094
@@ -378,8 +351,6 @@ vxlan_interface:
       vlans:
       - id: 100
         vni: 10100
-      - id: 150
-        vni: 10150
       - id: 200
         vni: 10200
       vrfs:

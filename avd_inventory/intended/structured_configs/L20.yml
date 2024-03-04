@@ -157,6 +157,10 @@ local_users:
   privilege: 15
   role: network-admin
   sha512_password: $6$1$0AZGoGzvaPV2j50H5CPNiCjZ9IJpsXTtbPp4QB/rzt4R3NjdBetkj1fiZ2g3Ops8uj/.h5GNcSEP6643osi7B.
+- name: avd
+  privilege: 15
+  role: network-admin
+  sha512_password: '{{ avd | password_hash(rounds=5000, salt=1) }}'
 vrfs:
 - name: MGMT
   ip_routing: false

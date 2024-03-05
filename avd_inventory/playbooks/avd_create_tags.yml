@@ -54,7 +54,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack0
+            value: R01-CAR05
       - device: L02
         device_tags:
           - name: topology_hint_datacenter
@@ -64,7 +64,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack0
+            value: R01-CAR05
       - device: L03
         device_tags:
           - name: topology_hint_datacenter
@@ -74,7 +74,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack1
+            value: R02-CAR05
       - device: L04
         device_tags:
           - name: topology_hint_datacenter
@@ -84,7 +84,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack1
+            value: R02-CAR05
       - device: L05
         device_tags:
           - name: topology_hint_datacenter
@@ -94,7 +94,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack2
+            value: R01-CAR11
       - device: L06
         device_tags:
           - name: topology_hint_datacenter
@@ -104,7 +104,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack2
+            value: R01-CAR11
       - device: L07
         device_tags:
           - name: topology_hint_datacenter
@@ -114,7 +114,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack3
+            value: R02-CAR11
       - device: L08
         device_tags:
           - name: topology_hint_datacenter
@@ -124,7 +124,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack3
+            value: R02-CAR11
       - device: L09
         device_tags:
           - name: topology_hint_datacenter
@@ -134,7 +134,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack4
+            value: R01-CAR01
       - device: L10
         device_tags:
           - name: topology_hint_datacenter
@@ -144,7 +144,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack4
+            value: R01-CAR01
       - device: L11
         device_tags:
           - name: topology_hint_datacenter
@@ -154,7 +154,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack5
+            value: R02-CAR01
       - device: L12
         device_tags:
           - name: topology_hint_datacenter
@@ -164,7 +164,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack5
+            value: R02-CAR01
       - device: L13
         device_tags:
           - name: topology_hint_datacenter
@@ -174,7 +174,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack6
+            value: R01-TC
       - device: L14
         device_tags:
           - name: topology_hint_datacenter
@@ -184,7 +184,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack6
+            value: R01-TC
       - device: L15
         device_tags:
           - name: topology_hint_datacenter
@@ -194,7 +194,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack7
+            value: R01-CAR21
       - device: L16
         device_tags:
           - name: topology_hint_datacenter
@@ -204,7 +204,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack7
+            value: R01-CAR21
       - device: L17
         device_tags:
           - name: topology_hint_datacenter
@@ -214,7 +214,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack8
+            value: R02-CAR21
       - device: L18
         device_tags:
           - name: topology_hint_datacenter
@@ -224,7 +224,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack8
+            value: R02-CAR21
       - device: L19
         device_tags:
           - name: topology_hint_datacenter
@@ -234,7 +234,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack9
+            value: R01-TE421
       - device: L20
         device_tags:
           - name: topology_hint_datacenter
@@ -244,7 +244,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack9
+            value: R01-TE421
       - device: L2L01
         device_tags:
           - name: topology_hint_datacenter
@@ -254,7 +254,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack0
+            value: R01-CAR05
       - device: L2L20
         device_tags:
           - name: topology_hint_datacenter
@@ -264,7 +264,7 @@
           - name: topology_hint_pod
             value: pod0
           - name: topology_hint_rack
-            value: Rack9
+            value: R01-TE421
   tasks:
     - name: "create tags"
       arista.cvp.cv_tag_v3:

@@ -25,6 +25,26 @@
             value: pod0
           - name: topology_hint_rack
             value: None
+      - device: S03
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: spine
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: None
+      - device: S04
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: spine
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: None
       - device: L01
         device_tags:
           - name: topology_hint_datacenter

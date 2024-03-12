@@ -1,0 +1,273 @@
+- name: Add topology tags
+  hosts: CV_SERVERS
+  connection: local
+  gather_facts: false
+  vars:
+    CVP_TAGS:
+      #DC1P1
+      - device: S01
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: spine
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: None
+      - device: S02
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: spine
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: None
+      - device: S03
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: spine
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: None
+      - device: S04
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: spine
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: None
+      - device: L01
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-CAR05
+      - device: L02
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-CAR05
+      - device: L03
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R02-CAR05
+      - device: L04
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R02-CAR05
+      - device: L05
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-CAR11
+      - device: L06
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-CAR11
+      - device: L07
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R02-CAR11
+      - device: L08
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R02-CAR11
+      - device: L09
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-CAR01
+      - device: L10
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-CAR01
+      - device: L11
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R02-CAR01
+      - device: L12
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R02-CAR01
+      - device: L13
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-TC
+      - device: L14
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-TC
+      - device: L15
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-CAR21
+      - device: L16
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-CAR21
+      - device: L17
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R02-CAR21
+      - device: L18
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R02-CAR21
+      - device: L19
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-TE421
+      - device: L20
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: leaf
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-TE421
+      - device: L2L01
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: endpoint
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-CAR05
+      - device: L2L20
+        device_tags:
+          - name: topology_hint_datacenter
+            value: DC1
+          - name: topology_hint_type
+            value: endpoint
+          - name: topology_hint_pod
+            value: pod0
+          - name: topology_hint_rack
+            value: R01-TE421
+  tasks:
+    - name: "create tags"
+      arista.cvp.cv_tag_v3:
+        tags: "{{CVP_TAGS}}"
+        #mode: delete
+        mode: assign
